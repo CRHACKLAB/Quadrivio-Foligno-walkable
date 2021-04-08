@@ -52,7 +52,7 @@ function preload() { //normally finished
   this.load.image("tiles21", "../assets/MAPPA FOLIGNO RPG/TILES/tilesets/Outside_C.png");
   this.load.image("tiles22", "../assets/MAPPA FOLIGNO RPG/TILES/tilesets/World_C.png");
 
-  this.load.tilemapTiledJSON("map", "assets/MAPPA FOLIGNO RPG/QUADRIVIO.json");
+  this.load.tilemapTiledJSON("map", "/assets/MAPPA FOLIGNO RPG/QUADRIVIO.json");
 
   this.load.atlas('BAsprites', '../assets/atlas/BeatriceArzittu.png', '../assets/atlas/BAsprites.json');
 
