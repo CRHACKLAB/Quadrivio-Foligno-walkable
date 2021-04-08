@@ -29,32 +29,32 @@ let showDebug = false;
 
 function preload() { //normally finished
 
-  this.load.image("tiles1", "../assets/MAPPA FOLIGNO RPG/TILES/tilesets/45 GRADI.png");
-  this.load.image("tiles2", "../assets/MAPPA FOLIGNO RPG/TILES/tilesets/castle1.png");
-  this.load.image("tiles3", "../assets/MAPPA FOLIGNO RPG/TILES/tilesets/castle45GRADI.png");
-  this.load.image("tiles4", "../assets/MAPPA FOLIGNO RPG/TILES/oaz5u3y9.png");
-  this.load.image("tiles5", "../assets/MAPPA FOLIGNO RPG/TILES/tilesets/SF_Outside_B.png");
-  this.load.image("tiles6", "../assets/MAPPA FOLIGNO RPG/TILES/tilesets/Outside_B.png");
-  this.load.image("tiles7", "../assets/MAPPA FOLIGNO RPG/TILES/tilesets/Inside_A5.png");
-  this.load.image("tiles8", "../assets/MAPPA FOLIGNO RPG/TILES/tilesets/Inside_C.png");
-  this.load.image("tiles9", "../assets/MAPPA FOLIGNO RPG/TILES/tilesets/muri1.png");
-  this.load.image("tiles10", "../assets/MAPPA FOLIGNO RPG/TILES/tilesets/muri2.png");
-  this.load.image("tiles11", "../assets/MAPPA FOLIGNO RPG/TILES/tilesets/Inside_A4.png");
-  this.load.image("tiles12", "../assets/MAPPA FOLIGNO RPG/TILES/Outside_A3.png");
-  this.load.image("tiles13", "../assets/MAPPA FOLIGNO RPG/TILES/tilesets/Outside_A5.png");
-  this.load.image("tiles14", "../assets/MAPPA FOLIGNO RPG/TILES/!Door1.png");
-  this.load.image("tiles15", "../assets/MAPPA FOLIGNO RPG/TILES/Lighthouse.png");
-  this.load.image("tiles16", "../assets/MAPPA FOLIGNO RPG/TILES/PORTE45.png");
-  this.load.image("tiles17", "../assets/MAPPA FOLIGNO RPG/TILES/roofs/basic_roofs1+2_recolor2.png");
-  this.load.image("tiles18", "../assets/MAPPA FOLIGNO RPG/TILES/roofs/basic_roofs1+2_Candacis.png");
-  this.load.image("tiles19", "../assets/MAPPA FOLIGNO RPG/TILES/tilesets/SF_Outside_A5.png");
-  this.load.image("tiles20", "../assets/MAPPA FOLIGNO RPG/TILES/STRADE.png");
-  this.load.image("tiles21", "../assets/MAPPA FOLIGNO RPG/TILES/tilesets/Outside_C.png");
-  this.load.image("tiles22", "../assets/MAPPA FOLIGNO RPG/TILES/tilesets/World_C.png");
+  this.load.image("tiles1", "assets/MAPPA FOLIGNO RPG/TILES/tilesets/45 GRADI.png");
+  this.load.image("tiles2", "assets/MAPPA FOLIGNO RPG/TILES/tilesets/castle1.png");
+  this.load.image("tiles3", "assets/MAPPA FOLIGNO RPG/TILES/tilesets/castle45GRADI.png");
+  this.load.image("tiles4", "assets/MAPPA FOLIGNO RPG/TILES/oaz5u3y9.png");
+  this.load.image("tiles5", "assets/MAPPA FOLIGNO RPG/TILES/tilesets/SF_Outside_B.png");
+  this.load.image("tiles6", "assets/MAPPA FOLIGNO RPG/TILES/tilesets/Outside_B.png");
+  this.load.image("tiles7", "assets/MAPPA FOLIGNO RPG/TILES/tilesets/Inside_A5.png");
+  this.load.image("tiles8", "assets/MAPPA FOLIGNO RPG/TILES/tilesets/Inside_C.png");
+  this.load.image("tiles9", "assets/MAPPA FOLIGNO RPG/TILES/tilesets/muri1.png");
+  this.load.image("tiles10", "assets/MAPPA FOLIGNO RPG/TILES/tilesets/muri2.png");
+  this.load.image("tiles11", "assets/MAPPA FOLIGNO RPG/TILES/tilesets/Inside_A4.png");
+  this.load.image("tiles12", "assets/MAPPA FOLIGNO RPG/TILES/Outside_A3.png");
+  this.load.image("tiles13", "assets/MAPPA FOLIGNO RPG/TILES/tilesets/Outside_A5.png");
+  this.load.image("tiles14", "assets/MAPPA FOLIGNO RPG/TILES/!Door1.png");
+  this.load.image("tiles15", "assets/MAPPA FOLIGNO RPG/TILES/Lighthouse.png");
+  this.load.image("tiles16", "assets/MAPPA FOLIGNO RPG/TILES/PORTE45.png");
+  this.load.image("tiles17", "assets/MAPPA FOLIGNO RPG/TILES/roofs/basic_roofs1+2_recolor2.png");
+  this.load.image("tiles18", "assets/MAPPA FOLIGNO RPG/TILES/roofs/basic_roofs1+2_Candacis.png");
+  this.load.image("tiles19", "assets/MAPPA FOLIGNO RPG/TILES/tilesets/SF_Outside_A5.png");
+  this.load.image("tiles20", "assets/MAPPA FOLIGNO RPG/TILES/STRADE.png");
+  this.load.image("tiles21", "assets/MAPPA FOLIGNO RPG/TILES/tilesets/Outside_C.png");
+  this.load.image("tiles22", "assets/MAPPA FOLIGNO RPG/TILES/tilesets/World_C.png");
 
-  this.load.tilemapTiledJSON("map", "/assets/MAPPA FOLIGNO RPG/QUADRIVIO.json");
+  this.load.tilemapTiledJSON("map", "assets/MAPPA FOLIGNO RPG/QUADRIVIO.json");
 
-  this.load.atlas('BAsprites', '../assets/atlas/BeatriceArzittu.png', '../assets/atlas/BAsprites.json');
+  this.load.atlas('BAsprites', 'assets/atlas/BeatriceArzittu.png', '../assets/atlas/BAsprites.json');
 
 }
 
