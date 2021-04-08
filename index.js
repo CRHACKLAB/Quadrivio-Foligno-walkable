@@ -54,7 +54,7 @@ function preload() { //normally finished
 
   this.load.tilemapTiledJSON("map", "assets/MAPPA FOLIGNO RPG/QUADRIVIO.json");
 
-  this.load.atlas('BAsprites', 'assets/atlas/BeatriceArzittu.png', '../assets/atlas/BAsprites.json');
+  this.load.atlas('BAsprites', 'assets/atlas/BeatriceArzittu.png', 'assets/atlas/BAsprites.json');
 
 }
 
