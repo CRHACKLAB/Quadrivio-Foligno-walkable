@@ -1,1 +1,0 @@
-# Quadrivio-Foligno-walkable
