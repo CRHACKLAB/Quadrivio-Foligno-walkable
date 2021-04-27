@@ -97,9 +97,9 @@ create() {
 
 
 
-  WorldLayer.setDepth(5); // -> is used for setting the dept of a layer, so the person playing it can for example walk underneath it
-  WorldLayer2.setDepth(4);
-  WorldLayer3.setDepth(3);
+  worldLayer.setDepth(5); // -> is used for setting the dept of a layer, so the person playing it can for example walk underneath it
+  worldLayer2.setDepth(4);
+  worldLayer3.setDepth(3);
   belowLayer.setDepth(2);
   belowLayer2.setDepth(1);
 
