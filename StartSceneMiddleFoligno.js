@@ -95,8 +95,8 @@ create() {
   belowLayer.setCollisionByProperty({ collides: true });
   belowLayer2.setCollisionByProperty({ collides: true });
 
-  belowLayer.setDepth(2);
-  belowLayer2.setDepth(1);
+  belowLayer.setDepth(10);
+  belowLayer2.setDepth(20);
 
 
 
