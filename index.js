@@ -4,8 +4,9 @@
  */
  import StartSceneMiddleFoligno from "./StartSceneMiddleFoligno.js";
  import SceneEastFoligno from "./SceneEastFoligno.js";
- import SceneMiddleFoligno from "./SceneMiddleFoligno";
- import SceneWestFoligno from "./SceneWestFoligno";
+ import SceneMiddleFoligno from "./SceneMiddleFoligno.js";
+ import SceneWestFoligno from "./SceneWestFoligno.js";
+
 
  // Our game scene
 var startSceneMiddleFoligno = new StartSceneMiddleFoligno();
