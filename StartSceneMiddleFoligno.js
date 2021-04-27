@@ -95,8 +95,10 @@ create() {
   belowLayer.setCollisionByProperty({ collides: true });
   belowLayer2.setCollisionByProperty({ collides: true });
 
-  belowLayer.setDepth(10);
-  belowLayer2.setDepth(20);
+
+
+//  worldLayer.setDepth(5); -> is used for setting the dept of a layer, so the person playing it can for example walk underneath it
+
 
 
 
