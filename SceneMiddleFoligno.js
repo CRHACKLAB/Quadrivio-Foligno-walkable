@@ -226,9 +226,13 @@ update(time, delta) {
     player.anims.stop();
 
     if(player.x>9800){
-      this.clickButton();
-
+      this.goEast();
     }
+
+    if(player.x<5){
+      this.goWest();
+    }
+
 
     // If we were moving, pick and idle frame to use
     if (prevVelocity.x < 0) player.setTexture("BAsprites", "left002");
@@ -243,9 +247,13 @@ end() {
 		
 }
 
-clickButton() {
-this.scene.start('sceneEastFoligno', { xpixel: 5, ypixel:player.y });
-}
+goEast() {
+  this.scene.start('sceneEastFoligno', { xpixel: 5, ypixel:player.y });
+  }
+
+goWest() {
+  this.scene.start('sceneWestFoligno', { xpixel: 9770, ypixel:player.y });
+  }
 
 
 }
