@@ -246,7 +246,7 @@ goEast() {
   this.scene.start('sceneEastFoligno', { xpixel: 5, ypixel:player.y });
   }
 
-goEast() {
+goWest() {
   this.scene.start('sceneWestFoligno', { xpixel: 9770, ypixel:player.y });
   }
 
