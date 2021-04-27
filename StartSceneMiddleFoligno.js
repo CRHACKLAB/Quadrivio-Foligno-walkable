@@ -95,7 +95,15 @@ create() {
   belowLayer.setCollisionByProperty({ collides: true });
   belowLayer2.setCollisionByProperty({ collides: true });
 
-  //aboveLayer.setDepth(10); -> is used for setting the dept of a layer, so the person playing it can for example walk underneath it
+
+
+  WorldLayer.setDepth(5); // -> is used for setting the dept of a layer, so the person playing it can for example walk underneath it
+  WorldLayer2.setDepth(4);
+  WorldLayer3.setDepth(3);
+  belowLayer.setDepth(2);
+  belowLayer2.setDepth(1);
+
+
 
   //declaring spawnpoint
   const spawnPoint = startmap.findObject("Objects", obj => obj.name === "Spawn Point");
