@@ -4,16 +4,13 @@
  */
  import StartSceneMiddleFoligno from "./StartSceneMiddleFoligno.js";
  import SceneEastFoligno from "./SceneEastFoligno.js";
- import SceneMiddleFoligno from "./SceneMiddleFoligno.js";
- import SceneWestFoligno from "./SceneWestFoligno.js";
+ import SceneMiddleFoligno from "./SceneMiddleFoligno";
  import PreloadScene from './preloadScene.js';
-
 
  // Our game scene
 var startSceneMiddleFoligno = new StartSceneMiddleFoligno();
 var sceneEastFoligno = new SceneEastFoligno();
 var sceneMiddleFoligno = new SceneMiddleFoligno();
-var sceneWestFoligno = new SceneWestFoligno();
 var preloadScene = new PreloadScene();
 
 var config = {
@@ -26,7 +23,8 @@ var config = {
   physics: {
     default: "arcade",
     arcade: {
-      gravity: { y: 0 }
+      gravity: { y: 0 },
+      enableBody: true
     }
   }
 };
@@ -41,7 +39,6 @@ game.scene.add('preloadScene', preloadScene);
 game.scene.add("startSceneMiddleFoligno", startSceneMiddleFoligno, player);
 game.scene.add('sceneEastFoligno', sceneEastFoligno, player);
 game.scene.add("sceneMiddleFoligno", sceneMiddleFoligno, player);
-game.scene.add("sceneWestFoligno", sceneWestFoligno, player);
 
 // start title
 game.scene.start('preloadScene');

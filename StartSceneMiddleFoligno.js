@@ -217,10 +217,6 @@ update(time, delta) {
 
     }
 
-    if(player.x>15){
-      this.goWest();
-
-    }
 
     // If we were moving, pick and idle frame to use
     if (prevVelocity.x < 0) player.setTexture("BAsprites", "left002");
@@ -239,15 +235,8 @@ goEast() {
 this.scene.start('sceneEastFoligno', { xpixel: 35, ypixel:player.y });
 }
 
-goWest() {
-  this.scene.start('sceneWestFoligno', { xpixel: 9800, ypixel:player.y });
-}
 
 }
-
-
-
-
 
 
 export default StartSceneMiddleFoligno;

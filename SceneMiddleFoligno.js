@@ -31,6 +31,8 @@ class SceneMiddleFoligno extends Phaser.Scene {
 
 create() {
 
+  console.log('we did it');
+
   //creating the map
   const startmap = this.make.tilemap({ key: "startmap" });
 
@@ -57,6 +59,8 @@ create() {
   const tileset20 = startmap.addTilesetImage("STRADE", "tiles20");
   const tileset21 = startmap.addTilesetImage("TETTI1", "tiles21");
   const tileset22 = startmap.addTilesetImage("World_C", "tiles22");
+
+  console.log('we did it');
 
   // what tilesets are in which layers
   const belowLayer = startmap.createLayer('STREET', [  tileset1, tileset2, tileset3, tileset4, tileset5, tileset6, tileset7, tileset8, tileset9, tileset10, tileset11, tileset12, tileset13, tileset14, tileset15, tileset16, tileset17, tileset18,tileset19, tileset20, tileset21, tileset22 ]); 
@@ -215,10 +219,10 @@ update(time, delta) {
 
     }
 
-    if(player.x>15){
-      this.goWest();
+    // if(player.x>15){
+    //   this.goWest();
 
-    }
+    // }
 
     // If we were moving, pick and idle frame to use
     if (prevVelocity.x < 0) player.setTexture("BAsprites", "left002");
@@ -237,9 +241,9 @@ goEast() {
 this.scene.start('sceneEastFoligno', { xpixel: 35, ypixel:player.y });
 }
 
-goWest() {
-  this.scene.start('sceneWestFoligno', { xpixel: 9800, ypixel:player.y });
-}
+// goWest() {
+//   this.scene.start('sceneWestFoligno', { xpixel: 9800, ypixel:player.y });
+// }
 
 
 }

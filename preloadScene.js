@@ -68,9 +68,6 @@ export default class PreloadScene extends Phaser.Scene
 	});
 	
 	for (var i = 0; i < 5000; i++) {
-		this.load.image('file'+i, 'zenvalogo.png');
-	}
-
 
 		this.load.image("tiles1", "assets/MAPPA FOLIGNO RPG/TILES/tilesets/45 GRADI.png");
 		this.load.image("tiles2", "assets/MAPPA FOLIGNO RPG/TILES/tilesets/castle1.png");
@@ -140,6 +137,7 @@ export default class PreloadScene extends Phaser.Scene
 		this.load.image("ESTtiles39", "assets/MAPPA FOLIGNO RPG EST/TILES/VARIE.png");
 	  
 		this.load.tilemapTiledJSON("map2", "assets/MAPPA FOLIGNO RPG EST/QUADRIVIO-EST.json");
+	}
 	  
     }
 
