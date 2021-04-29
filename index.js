@@ -4,7 +4,7 @@
  */
  import StartSceneMiddleFoligno from "./StartSceneMiddleFoligno.js";
  import SceneEastFoligno from "./SceneEastFoligno.js";
- import SceneMiddleFoligno from "./SceneMiddleFoligno";
+ import SceneMiddleFoligno from "./SceneMiddleFoligno.js";
  import PreloadScene from './preloadScene.js';
 
  // Our game scene
