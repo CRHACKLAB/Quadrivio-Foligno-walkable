@@ -4,7 +4,7 @@
      "export":
         {
          "format":"json",
-         "target":"..\/..\/..\/..\/..\/..\/..\/..\/wamp64\/www\/Paolotasks\/FOLIGNO\/connectingMaps\/assets\/MAPPA FOLIGNO RPG\/QUADRIVIO.json"
+         "target":"QUADRIVIO.json"
         }
     },
  "height":157,
@@ -103,7 +103,7 @@
         {
          "columns":8,
          "firstgid":1,
-         "image":"..\/..\/..\/..\/..\/..\/..\/..\/wamp64\/www\/Paolotasks\/FOLIGNO\/assets\/MAPPA FOLIGNO RPG\/TILES\/tilesets\/Outside_A5.png",
+         "image":"..\/..\/..\/assets\/MAPPA FOLIGNO RPG\/TILES\/tilesets\/Outside_A5.png",
          "imageheight":768,
          "imagewidth":384,
          "margin":0,
@@ -1269,7 +1269,7 @@
         {
          "columns":16,
          "firstgid":129,
-         "image":"..\/..\/..\/..\/..\/..\/..\/..\/wamp64\/www\/Paolotasks\/FOLIGNO\/assets\/MAPPA FOLIGNO RPG\/TILES\/tilesets\/World_C.png",
+         "image":"..\/..\/..\/assets\/MAPPA FOLIGNO RPG\/TILES\/tilesets\/World_C.png",
          "imageheight":768,
          "imagewidth":768,
          "margin":0,
@@ -3587,7 +3587,7 @@
         {
          "columns":8,
          "firstgid":385,
-         "image":"..\/..\/..\/..\/..\/..\/..\/..\/wamp64\/www\/Paolotasks\/FOLIGNO\/assets\/MAPPA FOLIGNO RPG\/TILES\/tilesets\/SF_Outside_A5.png",
+         "image":"..\/..\/..\/assets\/MAPPA FOLIGNO RPG\/TILES\/tilesets\/SF_Outside_A5.png",
          "imageheight":768,
          "imagewidth":384,
          "margin":0,
@@ -4753,7 +4753,7 @@
         {
          "columns":8,
          "firstgid":513,
-         "image":"..\/..\/..\/..\/..\/..\/..\/..\/wamp64\/www\/Paolotasks\/FOLIGNO\/connectingMaps\/assets\/MAPPA FOLIGNO RPG\/TILES\/STRADE.png",
+         "image":"TILES\/STRADE.png",
          "imageheight":96,
          "imagewidth":384,
          "margin":0,
@@ -4911,7 +4911,7 @@
         {
          "columns":8,
          "firstgid":529,
-         "image":"..\/..\/..\/..\/..\/..\/..\/..\/wamp64\/www\/Paolotasks\/FOLIGNO\/assets\/MAPPA FOLIGNO RPG\/TILES\/tilesets\/Inside_A5.png",
+         "image":"..\/..\/..\/assets\/MAPPA FOLIGNO RPG\/TILES\/tilesets\/Inside_A5.png",
          "imageheight":768,
          "imagewidth":384,
          "margin":0,
@@ -6077,7 +6077,7 @@
         {
          "columns":16,
          "firstgid":657,
-         "image":"..\/..\/..\/..\/..\/..\/..\/..\/wamp64\/www\/Paolotasks\/FOLIGNO\/assets\/MAPPA FOLIGNO RPG\/TILES\/tilesets\/Outside_C.png",
+         "image":"..\/..\/..\/assets\/MAPPA FOLIGNO RPG\/TILES\/tilesets\/Outside_C.png",
          "imageheight":768,
          "imagewidth":768,
          "margin":0,
@@ -8395,7 +8395,7 @@
         {
          "columns":16,
          "firstgid":913,
-         "image":"..\/..\/..\/..\/..\/..\/..\/..\/wamp64\/www\/Paolotasks\/FOLIGNO\/connectingMaps\/assets\/MAPPA FOLIGNO RPG\/TILES\/Outside_A3.png",
+         "image":"TILES\/Outside_A3.png",
          "imageheight":576,
          "imagewidth":768,
          "margin":0,
@@ -10137,7 +10137,7 @@
         {
          "columns":12,
          "firstgid":1105,
-         "image":"..\/..\/..\/..\/..\/..\/..\/..\/wamp64\/www\/Paolotasks\/FOLIGNO\/assets\/MAPPA FOLIGNO RPG\/TILES\/tilesets\/muri1.png",
+         "image":"..\/..\/..\/assets\/MAPPA FOLIGNO RPG\/TILES\/tilesets\/muri1.png",
          "imageheight":288,
          "imagewidth":576,
          "margin":0,
@@ -10799,7 +10799,7 @@
         {
          "columns":16,
          "firstgid":1177,
-         "image":"..\/..\/..\/..\/..\/..\/..\/..\/wamp64\/www\/Paolotasks\/FOLIGNO\/assets\/MAPPA FOLIGNO RPG\/TILES\/tilesets\/muri2.png",
+         "image":"..\/..\/..\/assets\/MAPPA FOLIGNO RPG\/TILES\/tilesets\/muri2.png",
          "imageheight":576,
          "imagewidth":768,
          "margin":0,
@@ -12397,7 +12397,7 @@
         {
          "columns":30,
          "firstgid":1369,
-         "image":"..\/..\/..\/..\/..\/..\/..\/..\/wamp64\/www\/Paolotasks\/FOLIGNO\/assets\/MAPPA FOLIGNO RPG\/TILES\/tilesets\/45 GRADI.png",
+         "image":"..\/..\/..\/assets\/MAPPA FOLIGNO RPG\/TILES\/tilesets\/45 GRADI.png",
          "imageheight":672,
          "imagewidth":1440,
          "margin":0,
@@ -16191,7 +16191,7 @@
         {
          "columns":8,
          "firstgid":1789,
-         "image":"..\/..\/..\/..\/..\/..\/..\/..\/wamp64\/www\/Paolotasks\/FOLIGNO\/assets\/MAPPA FOLIGNO RPG\/TILES\/tilesets\/castle1.png",
+         "image":"..\/..\/..\/assets\/MAPPA FOLIGNO RPG\/TILES\/tilesets\/castle1.png",
          "imageheight":336,
          "imagewidth":384,
          "margin":0,
@@ -16709,7 +16709,7 @@
         {
          "columns":9,
          "firstgid":1845,
-         "image":"..\/..\/..\/..\/..\/..\/..\/..\/wamp64\/www\/Paolotasks\/FOLIGNO\/assets\/MAPPA FOLIGNO RPG\/TILES\/tilesets\/castle45GRADI.png",
+         "image":"..\/..\/..\/assets\/MAPPA FOLIGNO RPG\/TILES\/tilesets\/castle45GRADI.png",
          "imageheight":288,
          "imagewidth":432,
          "margin":0,
@@ -17209,7 +17209,7 @@
         {
          "columns":16,
          "firstgid":1899,
-         "image":"..\/..\/..\/..\/..\/..\/..\/..\/wamp64\/www\/Paolotasks\/FOLIGNO\/assets\/MAPPA FOLIGNO RPG\/TILES\/roofs\/basic_roofs1+2_recolor2.png",
+         "image":"..\/..\/..\/assets\/MAPPA FOLIGNO RPG\/TILES\/roofs\/basic_roofs1+2_recolor2.png",
          "imageheight":768,
          "imagewidth":768,
          "margin":0,
@@ -19527,7 +19527,7 @@
         {
          "columns":16,
          "firstgid":2155,
-         "image":"..\/..\/..\/..\/..\/..\/..\/..\/wamp64\/www\/Paolotasks\/FOLIGNO\/assets\/MAPPA FOLIGNO RPG\/TILES\/roofs\/basic_roofs3+4_Candacis.png",
+         "image":"..\/..\/..\/assets\/MAPPA FOLIGNO RPG\/TILES\/roofs\/basic_roofs3+4_Candacis.png",
          "imageheight":768,
          "imagewidth":768,
          "margin":0,
@@ -21845,7 +21845,7 @@
         {
          "columns":16,
          "firstgid":2411,
-         "image":"..\/..\/..\/..\/..\/..\/..\/..\/wamp64\/www\/Paolotasks\/FOLIGNO\/assets\/MAPPA FOLIGNO RPG\/TILES\/tilesets\/Inside_A4.png",
+         "image":"..\/..\/..\/assets\/MAPPA FOLIGNO RPG\/TILES\/tilesets\/Inside_A4.png",
          "imageheight":720,
          "imagewidth":768,
          "margin":0,
@@ -24019,7 +24019,7 @@
         {
          "columns":16,
          "firstgid":2651,
-         "image":"..\/..\/..\/..\/..\/..\/..\/..\/wamp64\/www\/Paolotasks\/FOLIGNO\/assets\/MAPPA FOLIGNO RPG\/TILES\/tilesets\/Outside_B.png",
+         "image":"..\/..\/..\/assets\/MAPPA FOLIGNO RPG\/TILES\/tilesets\/Outside_B.png",
          "imageheight":768,
          "imagewidth":768,
          "margin":0,
@@ -26337,7 +26337,7 @@
         {
          "columns":4,
          "firstgid":2907,
-         "image":"..\/..\/..\/..\/..\/..\/..\/..\/wamp64\/www\/Paolotasks\/FOLIGNO\/connectingMaps\/assets\/MAPPA FOLIGNO RPG\/TILES\/!Door1.png",
+         "image":"TILES\/!Door1.png",
          "imageheight":96,
          "imagewidth":192,
          "margin":0,
@@ -26423,7 +26423,7 @@
         {
          "columns":16,
          "firstgid":2915,
-         "image":"..\/..\/..\/..\/..\/..\/..\/..\/wamp64\/www\/Paolotasks\/FOLIGNO\/assets\/MAPPA FOLIGNO RPG\/TILES\/tilesets\/Inside_C.png",
+         "image":"..\/..\/..\/assets\/MAPPA FOLIGNO RPG\/TILES\/tilesets\/Inside_C.png",
          "imageheight":768,
          "imagewidth":768,
          "margin":0,
@@ -28741,7 +28741,7 @@
         {
          "columns":16,
          "firstgid":3171,
-         "image":"..\/..\/..\/..\/..\/..\/..\/..\/wamp64\/www\/Paolotasks\/FOLIGNO\/assets\/MAPPA FOLIGNO RPG\/TILES\/tilesets\/SF_Outside_B.png",
+         "image":"..\/..\/..\/assets\/MAPPA FOLIGNO RPG\/TILES\/tilesets\/SF_Outside_B.png",
          "imageheight":768,
          "imagewidth":768,
          "margin":0,
@@ -31059,7 +31059,7 @@
         {
          "columns":16,
          "firstgid":3427,
-         "image":"..\/..\/..\/..\/..\/..\/..\/..\/wamp64\/www\/Paolotasks\/FOLIGNO\/connectingMaps\/assets\/MAPPA FOLIGNO RPG\/TILES\/Lighthouse.png",
+         "image":"TILES\/Lighthouse.png",
          "imageheight":768,
          "imagewidth":768,
          "margin":0,
@@ -32801,7 +32801,7 @@
         {
          "columns":12,
          "firstgid":3683,
-         "image":"..\/..\/..\/..\/..\/..\/..\/..\/wamp64\/www\/Paolotasks\/FOLIGNO\/connectingMaps\/assets\/MAPPA FOLIGNO RPG\/TILES\/oaz5u3y9.png",
+         "image":"TILES\/oaz5u3y9.png",
          "imageheight":288,
          "imagewidth":576,
          "margin":0,
@@ -33463,7 +33463,7 @@
         {
          "columns":12,
          "firstgid":3755,
-         "image":"..\/..\/..\/..\/..\/..\/..\/..\/wamp64\/www\/Paolotasks\/FOLIGNO\/connectingMaps\/assets\/MAPPA FOLIGNO RPG\/TILES\/PORTE45.png",
+         "image":"TILES\/PORTE45.png",
          "imageheight":384,
          "imagewidth":576,
          "margin":0,
