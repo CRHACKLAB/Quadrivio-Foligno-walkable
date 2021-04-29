@@ -3,9 +3,15 @@
  * Althered by : Aaron Sprangers
  */
 
+ import PreloadScene from './preloadScene.js';
+
 let cursors;
 let player;
 let showDebug = false;
+let checker = 0;
+
+var preloadScene = new PreloadScene();
+
 
 class StartSceneMiddleFoligno extends Phaser.Scene {
 
@@ -20,32 +26,8 @@ class StartSceneMiddleFoligno extends Phaser.Scene {
 
   preload() { //normally finished
 
-  this.load.image("tiles1", "assets/MAPPA FOLIGNO RPG/TILES/tilesets/45 GRADI.png");
-  this.load.image("tiles2", "assets/MAPPA FOLIGNO RPG/TILES/tilesets/castle1.png");
-  this.load.image("tiles3", "assets/MAPPA FOLIGNO RPG/TILES/tilesets/castle45GRADI.png");
-  this.load.image("tiles4", "assets/MAPPA FOLIGNO RPG/TILES/oaz5u3y9.png");
-  this.load.image("tiles5", "assets/MAPPA FOLIGNO RPG/TILES/tilesets/SF_Outside_B.png");
-  this.load.image("tiles6", "assets/MAPPA FOLIGNO RPG/TILES/tilesets/Outside_B.png");
-  this.load.image("tiles7", "assets/MAPPA FOLIGNO RPG/TILES/tilesets/Inside_A5.png");
-  this.load.image("tiles8", "assets/MAPPA FOLIGNO RPG/TILES/tilesets/Inside_C.png");
-  this.load.image("tiles9", "assets/MAPPA FOLIGNO RPG/TILES/tilesets/muri1.png");
-  this.load.image("tiles10", "assets/MAPPA FOLIGNO RPG/TILES/tilesets/muri2.png");
-  this.load.image("tiles11", "assets/MAPPA FOLIGNO RPG/TILES/tilesets/Inside_A4.png");
-  this.load.image("tiles12", "assets/MAPPA FOLIGNO RPG/TILES/Outside_A3.png");
-  this.load.image("tiles13", "assets/MAPPA FOLIGNO RPG/TILES/tilesets/Outside_A5.png");
-  this.load.image("tiles14", "assets/MAPPA FOLIGNO RPG/TILES/!Door1.png");
-  this.load.image("tiles15", "assets/MAPPA FOLIGNO RPG/TILES/Lighthouse.png");
-  this.load.image("tiles16", "assets/MAPPA FOLIGNO RPG/TILES/PORTE45.png");
-  this.load.image("tiles17", "assets/MAPPA FOLIGNO RPG/TILES/roofs/basic_roofs1+2_recolor2.png");
-  this.load.image("tiles18", "assets/MAPPA FOLIGNO RPG/TILES/roofs/basic_roofs1+2_Candacis.png");
-  this.load.image("tiles19", "assets/MAPPA FOLIGNO RPG/TILES/tilesets/SF_Outside_A5.png");
-  this.load.image("tiles20", "assets/MAPPA FOLIGNO RPG/TILES/STRADE.png");
-  this.load.image("tiles21", "assets/MAPPA FOLIGNO RPG/TILES/tilesets/Outside_C.png");
-  this.load.image("tiles22", "assets/MAPPA FOLIGNO RPG/TILES/tilesets/World_C.png");
+preloadScene;
 
-  this.load.tilemapTiledJSON("startmap", "assets/MAPPA FOLIGNO RPG/QUADRIVIO.json");
-
-  this.load.atlas('BAsprites', 'assets/atlas/BeatriceArzittu.png', 'assets/atlas/BAsprites.json');
 
 }
 
@@ -95,12 +77,7 @@ create() {
   belowLayer.setCollisionByProperty({ collides: true });
   belowLayer2.setCollisionByProperty({ collides: true });
 
-
-
-//  worldLayer.setDepth(5); -> is used for setting the dept of a layer, so the person playing it can for example walk underneath it
-
-
-
+  //aboveLayer.setDepth(10); -> is used for setting the dept of a layer, so the person playing it can for example walk underneath it
 
   //declaring spawnpoint
   const spawnPoint = startmap.findObject("Objects", obj => obj.name === "Spawn Point");
@@ -188,6 +165,15 @@ anims.create({
     .setDepth(30);
 
   // Debug graphics - Under Construction
+
+  //not yet applied *******
+
+  this.physics.world.setBounds(0, 0, startmap.widthInPixels, startmap.heightInPixels, true, true, true, true); // it works
+  player.body.collideWorldBounds=true;
+
+  //not yet applied *******
+
+
 }
 
 update(time, delta) {
@@ -228,10 +214,12 @@ update(time, delta) {
 
     if(player.x>9800){
       this.goEast();
+
     }
 
-    if(player.x<5){
+    if(player.x>15){
       this.goWest();
+
     }
 
     // If we were moving, pick and idle frame to use
@@ -248,14 +236,18 @@ end() {
 }
 
 goEast() {
-  this.scene.start('sceneEastFoligno', { xpixel: 5, ypixel:player.y });
-  }
+this.scene.start('sceneEastFoligno', { xpixel: 35, ypixel:player.y });
+}
 
 goWest() {
-  this.scene.start('sceneWestFoligno', { xpixel: 9770, ypixel:player.y });
-  }
-
+  this.scene.start('sceneWestFoligno', { xpixel: 9800, ypixel:player.y });
+}
 
 }
+
+
+
+
+
 
 export default StartSceneMiddleFoligno;
