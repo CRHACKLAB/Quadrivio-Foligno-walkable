@@ -167,6 +167,7 @@ player = this.physics.add
   this.physics.add.collider(player, belowLayer); 
   this.physics.add.collider(player, belowLayer2);
   this.physics.add.collider(player, belowLayer3);
+  this.physics.add.collider(player, belowLayer3);
 
 // Create the player's walking animations from the texture atlas. These are stored in the global
 // animation manager so any sprite can access them.
@@ -291,9 +292,9 @@ end() {
 		
 }
 
-goEast() {
-  this.scene.start('sceneMiddleFoligno', { xpixel: 15, ypixel:player.y });
-  }
+// goEast() {
+//   this.scene.start('sceneMiddleFoligno', { xpixel: 15, ypixel:player.y });
+//   }
   
   
 }
