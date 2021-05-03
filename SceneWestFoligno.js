@@ -35,7 +35,7 @@
   this.load.image("tiles9", "assets/MAPPA FOLIGNO RPG EST/TILES/tilesets/muri1.png");
   this.load.image("tiles10", "assets/MAPPA FOLIGNO RPG EST/TILES/tilesets/muri2.png");
   this.load.image("tiles11", "assets/MAPPA FOLIGNO RPG EST/TILES/tilesets/Inside_A4.png");
-  this.load.image("tiles12", "assets/MAPPA FOLIGNO RPG EST/TILES/Outside_A3.png");
+  this.load.image("tiles12", "assets/MAPPA FOLIGNO RPG OVEST/TILES/Outside_A3.png");
   this.load.image("tiles13", "assets/MAPPA FOLIGNO RPG EST/TILES/tilesets/Outside_A5.png");
   this.load.image("tiles14", "assets/MAPPA FOLIGNO RPG EST/TILES/!Door1.png");
   this.load.image("tiles15", "assets/MAPPA FOLIGNO RPG EST/TILES/Lighthouse.png");
