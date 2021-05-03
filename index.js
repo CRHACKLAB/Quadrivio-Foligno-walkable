@@ -4,12 +4,14 @@
  */
  import StartSceneMiddleFoligno from "./StartSceneMiddleFoligno.js";
  import SceneEastFoligno from "./SceneEastFoligno.js";
+ import SceneWestFoligno from "./SceneWestFoligno.js";
  import SceneMiddleFoligno from "./SceneMiddleFoligno.js";
  import PreloadScene from './preloadScene.js';
 
  // Our game scene
 var startSceneMiddleFoligno = new StartSceneMiddleFoligno();
 var sceneEastFoligno = new SceneEastFoligno();
+var sceneWestFoligno = new SceneWestFoligno();
 var sceneMiddleFoligno = new SceneMiddleFoligno();
 var preloadScene = new PreloadScene();
 
@@ -38,10 +40,11 @@ let showDebug = false;
 game.scene.add('preloadScene', preloadScene);
 game.scene.add("startSceneMiddleFoligno", startSceneMiddleFoligno, player);
 game.scene.add('sceneEastFoligno', sceneEastFoligno, player);
+game.scene.add('sceneWestFoligno', sceneWestFoligno, player);
 game.scene.add("sceneMiddleFoligno", sceneMiddleFoligno, player);
 
 // start title
-game.scene.start('preloadScene');
+game.scene.start('sceneWestFoligno');
 
 
 

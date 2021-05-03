@@ -3,7 +3,7 @@
  * Althered by : Aaron Sprangers
  */
 
- import PreloadScene from './preloadScene.js';
+import PreloadScene from './preloadScene.js';
 
 let cursors;
 let player;
