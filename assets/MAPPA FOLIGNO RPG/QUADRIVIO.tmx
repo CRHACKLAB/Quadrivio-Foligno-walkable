@@ -4,7 +4,7 @@
   <export target="QUADRIVIO.json" format="json"/>
  </editorsettings>
  <tileset firstgid="1" name="PAVIMENTI1" tilewidth="48" tileheight="48" tilecount="128" columns="8">
-  <image source="../../../assets/MAPPA FOLIGNO RPG/TILES/tilesets/Outside_A5.png" width="384" height="768"/>
+  <image source="TILES/tilesets/Outside_A5.png" width="384" height="768"/>
   <tile id="0">
    <properties>
     <property name="collides" type="bool" value="false"/>
@@ -647,7 +647,7 @@
   </tile>
  </tileset>
  <tileset firstgid="129" name="World_C" tilewidth="48" tileheight="48" tilecount="256" columns="16">
-  <image source="../../../assets/MAPPA FOLIGNO RPG/TILES/tilesets/World_C.png" width="768" height="768"/>
+  <image source="TILES/tilesets/World_C.png" width="768" height="768"/>
   <tile id="0">
    <properties>
     <property name="collides" type="bool" value="true"/>
@@ -1930,7 +1930,7 @@
   </tile>
  </tileset>
  <tileset firstgid="385" name="SF_Outside_A5" tilewidth="48" tileheight="48" tilecount="128" columns="8">
-  <image source="../../../assets/MAPPA FOLIGNO RPG/TILES/tilesets/SF_Outside_A5.png" width="384" height="768"/>
+  <image source="TILES/tilesets/SF_Outside_A5.png" width="384" height="768"/>
   <tile id="0">
    <properties>
     <property name="collides" type="bool" value="false"/>
@@ -2656,7 +2656,7 @@
   </tile>
  </tileset>
  <tileset firstgid="529" name="Inside_A5" tilewidth="48" tileheight="48" tilecount="128" columns="8">
-  <image source="../../../assets/MAPPA FOLIGNO RPG/TILES/tilesets/Inside_A5.png" width="384" height="768"/>
+  <image source="TILES/tilesets/Inside_A5.png" width="384" height="768"/>
   <tile id="0">
    <properties>
     <property name="collides" type="bool" value="false"/>
@@ -3299,7 +3299,7 @@
   </tile>
  </tileset>
  <tileset firstgid="657" name="TETTI1" tilewidth="48" tileheight="48" tilecount="256" columns="16">
-  <image source="../../../assets/MAPPA FOLIGNO RPG/TILES/tilesets/Outside_C.png" width="768" height="768"/>
+  <image source="TILES/tilesets/Outside_C.png" width="768" height="768"/>
   <tile id="0">
    <properties>
     <property name="collides" type="bool" value="true"/>
@@ -5545,7 +5545,7 @@
   </tile>
  </tileset>
  <tileset firstgid="1105" name="muri1" tilewidth="48" tileheight="48" tilecount="72" columns="12">
-  <image source="../../../assets/MAPPA FOLIGNO RPG/TILES/tilesets/muri1.png" width="576" height="288"/>
+  <image source="TILES/tilesets/muri1.png" width="576" height="288"/>
   <tile id="0">
    <properties>
     <property name="collides" type="bool" value="true"/>
@@ -5908,7 +5908,7 @@
   </tile>
  </tileset>
  <tileset firstgid="1177" name="muri2" tilewidth="48" tileheight="48" tilecount="192" columns="16">
-  <image source="../../../assets/MAPPA FOLIGNO RPG/TILES/tilesets/muri2.png" width="768" height="576"/>
+  <image source="TILES/tilesets/muri2.png" width="768" height="576"/>
   <tile id="0">
    <properties>
     <property name="collides" type="bool" value="true"/>
@@ -6791,7 +6791,7 @@
   </tile>
  </tileset>
  <tileset firstgid="1369" name="45 GRADI" tilewidth="48" tileheight="48" tilecount="420" columns="30">
-  <image source="../../../assets/MAPPA FOLIGNO RPG/TILES/tilesets/45 GRADI.png" width="1440" height="672"/>
+  <image source="TILES/tilesets/45 GRADI.png" width="1440" height="672"/>
   <tile id="0">
    <properties>
     <property name="collides" type="bool" value="false"/>
@@ -8894,7 +8894,7 @@
   </tile>
  </tileset>
  <tileset firstgid="1789" name="castle1" tilewidth="48" tileheight="48" tilecount="56" columns="8">
-  <image source="../../../assets/MAPPA FOLIGNO RPG/TILES/tilesets/castle1.png" width="384" height="336"/>
+  <image source="TILES/tilesets/castle1.png" width="384" height="336"/>
   <tile id="0">
    <properties>
     <property name="collides" type="bool" value="true"/>
@@ -9177,7 +9177,7 @@
   </tile>
  </tileset>
  <tileset firstgid="1845" name="castle45GRADI" tilewidth="48" tileheight="48" tilecount="54" columns="9">
-  <image source="../../../assets/MAPPA FOLIGNO RPG/TILES/tilesets/castle45GRADI.png" width="432" height="288"/>
+  <image source="TILES/tilesets/castle45GRADI.png" width="432" height="288"/>
   <tile id="0">
    <properties>
     <property name="collides" type="bool" value="true"/>
@@ -9450,7 +9450,7 @@
   </tile>
  </tileset>
  <tileset firstgid="1899" name="ROOF1" tilewidth="48" tileheight="48" tilecount="256" columns="16">
-  <image source="../../../assets/MAPPA FOLIGNO RPG/TILES/roofs/basic_roofs1+2_recolor2.png" width="768" height="768"/>
+  <image source="TILES/roofs/basic_roofs1+2_recolor2.png" width="768" height="768"/>
   <tile id="0">
    <properties>
     <property name="collides" type="bool" value="true"/>
@@ -10733,7 +10733,7 @@
   </tile>
  </tileset>
  <tileset firstgid="2155" name="ROOF2" tilewidth="48" tileheight="48" tilecount="256" columns="16">
-  <image source="../../../assets/MAPPA FOLIGNO RPG/TILES/roofs/basic_roofs3+4_Candacis.png" width="768" height="768"/>
+  <image source="TILES/roofs/basic_roofs3+4_Candacis.png" width="768" height="768"/>
   <tile id="0">
    <properties>
     <property name="collides" type="bool" value="true"/>
@@ -12015,8 +12015,8 @@
    </properties>
   </tile>
  </tileset>
- <tileset firstgid="2411" name="MURI3" tilewidth="48" tileheight="48" tilecount="240" columns="16">
-  <image source="../../../assets/MAPPA FOLIGNO RPG/TILES/tilesets/Inside_A4.png" width="768" height="720"/>
+ <tileset firstgid="2411" name="MURI3" tilewidth="48" tileheight="48" tilecount="240" columns="15">
+  <image source="TILES/tilesets/Inside_A4.png" width="720" height="720"/>
   <tile id="0">
    <properties>
     <property name="collides" type="bool" value="true"/>
@@ -13219,7 +13219,7 @@
   </tile>
  </tileset>
  <tileset firstgid="2651" name="ESTERNO2" tilewidth="48" tileheight="48" tilecount="256" columns="16">
-  <image source="../../../assets/MAPPA FOLIGNO RPG/TILES/tilesets/Outside_B.png" width="768" height="768"/>
+  <image source="TILES/tilesets/Outside_B.png" width="768" height="768"/>
   <tile id="0">
    <properties>
     <property name="collides" type="bool" value="true"/>
@@ -14545,7 +14545,7 @@
   </tile>
  </tileset>
  <tileset firstgid="2915" name="Inside_C" tilewidth="48" tileheight="48" tilecount="256" columns="16">
-  <image source="../../../assets/MAPPA FOLIGNO RPG/TILES/tilesets/Inside_C.png" width="768" height="768"/>
+  <image source="TILES/tilesets/Inside_C.png" width="768" height="768"/>
   <tile id="0">
    <properties>
     <property name="collides" type="bool" value="true"/>
@@ -15828,7 +15828,7 @@
   </tile>
  </tileset>
  <tileset firstgid="3171" name="ESTERNO1" tilewidth="48" tileheight="48" tilecount="256" columns="16">
-  <image source="../../../assets/MAPPA FOLIGNO RPG/TILES/tilesets/SF_Outside_B.png" width="768" height="768"/>
+  <image source="TILES/tilesets/SF_Outside_B.png" width="768" height="768"/>
   <tile id="0">
    <properties>
     <property name="collides" type="bool" value="false"/>
