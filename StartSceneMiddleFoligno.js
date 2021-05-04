@@ -214,7 +214,10 @@ update(time, delta) {
 
     if(player.x>9800){
       this.goEast();
+    }
 
+    if(player.x<20){
+      this.goWest();
     }
 
 

@@ -216,13 +216,11 @@ update(time, delta) {
 
     if(player.x>9800){
       this.goEast();
-
     }
 
-    // if(player.x>15){
-    //   this.goWest();
-
-    // }
+    if(player.x<20){
+      this.goWest();
+    }
 
     // If we were moving, pick and idle frame to use
     if (prevVelocity.x < 0) player.setTexture("BAsprites", "left002");
