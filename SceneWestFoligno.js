@@ -276,7 +276,7 @@ update(time, delta) {
   } else {
     player.anims.stop();
 
-    if(player.x>9770){
+    if(player.x>9800){
       this.goEast();
       console.log(player.x);
 
@@ -296,7 +296,7 @@ end() {
 }
 
 goEast() {
-  this.scene.start('sceneMiddleFoligno', { xpixel: 50, ypixel:player.y });
+  this.scene.start('sceneMiddleFoligno', { xpixel: 35, ypixel:player.y });
    }
   
   

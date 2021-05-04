@@ -240,7 +240,7 @@ this.scene.start('sceneEastFoligno', { xpixel: 35, ypixel:player.y });
 }
 
 goWest() {
-  this.scene.start('sceneWestFoligno', { xpixel: 9770, ypixel:player.y });
+  this.scene.start('sceneWestFoligno', { xpixel: 9800, ypixel:player.y });
  }
 
 
