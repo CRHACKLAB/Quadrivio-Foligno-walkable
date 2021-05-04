@@ -292,7 +292,7 @@ end() {
 }
 
 goEast() {
-  this.scene.start('sceneMiddleFoligno', { xpixel: 15, ypixel:player.y });
+  this.scene.start('sceneMiddleFoligno', { xpixel: 25, ypixel:player.y });
    }
   
   
