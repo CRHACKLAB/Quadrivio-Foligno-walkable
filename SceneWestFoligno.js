@@ -17,57 +17,55 @@
  
    init(data) {
 
-    //this.xpixel = data.xpixel;
-    //this.ypixel = data.ypixel;
+    this.xpixel = data.xpixel;
+    this.ypixel = data.ypixel;
  
    };
 
    preload() { //normally finished
 
-  this.load.image("tiles1", "assets/MAPPA FOLIGNO RPG EST/TILES/tilesets/45 GRADI.png");
-  this.load.image("tiles2", "assets/MAPPA FOLIGNO RPG EST/TILES/tilesets/castle1.png");
-  this.load.image("tiles3", "assets/MAPPA FOLIGNO RPG EST/TILES/tilesets/castle45GRADI.png");
-  this.load.image("tiles4", "assets/MAPPA FOLIGNO RPG EST/TILES/oaz5u3y9.png");
-  this.load.image("tiles5", "assets/MAPPA FOLIGNO RPG EST/TILES/tilesets/SF_Outside_B.png");
-  this.load.image("tiles6", "assets/MAPPA FOLIGNO RPG EST/TILES/tilesets/Outside_B.png");
-  this.load.image("tiles7", "assets/MAPPA FOLIGNO RPG EST/TILES/tilesets/Inside_A5.png");
-  this.load.image("tiles8", "assets/MAPPA FOLIGNO RPG EST/TILES/tilesets/Inside_C.png");
-  this.load.image("tiles9", "assets/MAPPA FOLIGNO RPG EST/TILES/tilesets/muri1.png");
-  this.load.image("tiles10", "assets/MAPPA FOLIGNO RPG OVEST/TILES/tilesets/muri2.png");
-  this.load.image("tiles11", "assets/MAPPA FOLIGNO RPG EST/TILES/tilesets/Inside_A4.png");
-  this.load.image("tiles12", "assets/MAPPA FOLIGNO RPG OVEST/TILES/Outside_A3.png");
-  this.load.image("tiles13", "assets/MAPPA FOLIGNO RPG EST/TILES/tilesets/Outside_A5.png");
-  this.load.image("tiles14", "assets/MAPPA FOLIGNO RPG EST/TILES/!Door1.png");
-  this.load.image("tiles15", "assets/MAPPA FOLIGNO RPG EST/TILES/Lighthouse.png");
-  this.load.image("tiles16", "assets/MAPPA FOLIGNO RPG EST/TILES/PORTE45.png");
-  this.load.image("tiles17", "assets/MAPPA FOLIGNO RPG EST/TILES/roofs/basic_roofs1+2_recolor2.png");
-  this.load.image("tiles18", "assets/MAPPA FOLIGNO RPG EST/TILES/roofs/basic_roofs1+2_Candacis.png");
-  this.load.image("tiles19", "assets/MAPPA FOLIGNO RPG EST/TILES/tilesets/SF_Outside_A5.png");
-  this.load.image("tiles20", "assets/MAPPA FOLIGNO RPG EST/TILES/STRADE.png");
-  this.load.image("tiles21", "assets/MAPPA FOLIGNO RPG EST/TILES/tilesets/Outside_C.png");
-  this.load.image("tiles22", "assets/MAPPA FOLIGNO RPG EST/TILES/tilesets/World_C.png");
-  this.load.image("tiles23", "assets/MAPPA FOLIGNO RPG EST/TILES/tilesets/AIUOLA.png");
-  this.load.image("tiles24", "assets/MAPPA FOLIGNO RPG EST/TILES/ALBERI.png");
-  this.load.image("tiles25", "assets/MAPPA FOLIGNO RPG EST/TILES/ancient doors.png");
-  this.load.image("tiles26", "assets/MAPPA FOLIGNO RPG EST/TILES/BALCONI.png");
-  this.load.image("tiles27", "assets/MAPPA FOLIGNO RPG EST/TILES/big windows.png");
-  this.load.image("tiles28", "assets/MAPPA FOLIGNO RPG EST/TILES/GLASS DOORS.png");
-  this.load.image("tiles29", "assets/MAPPA FOLIGNO RPG EST/TILES/tilesets/ladders_45degrees.png");
-  this.load.image("tiles30", "assets/MAPPA FOLIGNO RPG EST/TILES/METAL GEARS.png");
-  this.load.image("tiles31", "assets/MAPPA FOLIGNO RPG EST/QUADRIVIO EST.png");
-  this.load.image("tiles32", "assets/MAPPA FOLIGNO RPG EST/QUADRIVIO2.jpg");
-  this.load.image("tiles33", "assets/MAPPA FOLIGNO RPG EST/TILES/rosoni piccoli.png");
-  this.load.image("tiles34", "assets/MAPPA FOLIGNO RPG EST/Statua Garibaldi.png");
-  this.load.image("tiles35", "assets/MAPPA FOLIGNO RPG EST/TILES/TETTI BASSI.png");
-  this.load.image("tiles36", "assets/MAPPA FOLIGNO RPG EST/TILES/TETTI BASSI 2.png");
-  this.load.image("tiles37", "assets/MAPPA FOLIGNO RPG EST/TILES/TETTI COMPLETI.png");
-  this.load.image("tiles38", "assets/MAPPA FOLIGNO RPG EST/TILES/tetti frontali.png");
-  this.load.image("tiles39", "assets/MAPPA FOLIGNO RPG OVEST/TILES/VARIE.png");
-  this.load.image("tiles40", "assets/MAPPA FOLIGNO RPG OVEST/TILES/roofs1.png");
+  // this.load.image("tiles1", "assets/MAPPA FOLIGNO RPG EST/TILES/tilesets/45 GRADI.png");
+  // this.load.image("tiles2", "assets/MAPPA FOLIGNO RPG EST/TILES/tilesets/castle1.png");
+  // this.load.image("tiles3", "assets/MAPPA FOLIGNO RPG EST/TILES/tilesets/castle45GRADI.png");
+  // this.load.image("tiles4", "assets/MAPPA FOLIGNO RPG EST/TILES/oaz5u3y9.png");
+  // this.load.image("tiles5", "assets/MAPPA FOLIGNO RPG EST/TILES/tilesets/SF_Outside_B.png");
+  // this.load.image("tiles6", "assets/MAPPA FOLIGNO RPG EST/TILES/tilesets/Outside_B.png");
+  // this.load.image("tiles7", "assets/MAPPA FOLIGNO RPG EST/TILES/tilesets/Inside_A5.png");
+  // this.load.image("tiles8", "assets/MAPPA FOLIGNO RPG EST/TILES/tilesets/Inside_C.png");
+  // this.load.image("tiles9", "assets/MAPPA FOLIGNO RPG EST/TILES/tilesets/muri1.png");
+  // this.load.image("tiles10", "assets/MAPPA FOLIGNO RPG OVEST/TILES/tilesets/muri2.png");
+  // this.load.image("tiles11", "assets/MAPPA FOLIGNO RPG EST/TILES/tilesets/Inside_A4.png");
+  // this.load.image("tiles12", "assets/MAPPA FOLIGNO RPG OVEST/TILES/Outside_A3.png");
+  // this.load.image("tiles13", "assets/MAPPA FOLIGNO RPG EST/TILES/tilesets/Outside_A5.png");
+  // this.load.image("tiles14", "assets/MAPPA FOLIGNO RPG EST/TILES/!Door1.png");
+  // this.load.image("tiles15", "assets/MAPPA FOLIGNO RPG EST/TILES/Lighthouse.png");
+  // this.load.image("tiles16", "assets/MAPPA FOLIGNO RPG EST/TILES/PORTE45.png");
+  // this.load.image("tiles17", "assets/MAPPA FOLIGNO RPG EST/TILES/roofs/basic_roofs1+2_recolor2.png");
+  // this.load.image("tiles18", "assets/MAPPA FOLIGNO RPG EST/TILES/roofs/basic_roofs1+2_Candacis.png");
+  // this.load.image("tiles19", "assets/MAPPA FOLIGNO RPG EST/TILES/tilesets/SF_Outside_A5.png");
+  // this.load.image("tiles20", "assets/MAPPA FOLIGNO RPG EST/TILES/STRADE.png");
+  // this.load.image("tiles21", "assets/MAPPA FOLIGNO RPG EST/TILES/tilesets/Outside_C.png");
+  // this.load.image("tiles22", "assets/MAPPA FOLIGNO RPG EST/TILES/tilesets/World_C.png");
+  // this.load.image("tiles23", "assets/MAPPA FOLIGNO RPG EST/TILES/tilesets/AIUOLA.png");
+  // this.load.image("tiles24", "assets/MAPPA FOLIGNO RPG EST/TILES/ALBERI.png");
+  // this.load.image("tiles25", "assets/MAPPA FOLIGNO RPG EST/TILES/ancient doors.png");
+  // this.load.image("tiles26", "assets/MAPPA FOLIGNO RPG EST/TILES/BALCONI.png");
+  // this.load.image("tiles27", "assets/MAPPA FOLIGNO RPG EST/TILES/big windows.png");
+  // this.load.image("tiles28", "assets/MAPPA FOLIGNO RPG EST/TILES/GLASS DOORS.png");
+  // this.load.image("tiles29", "assets/MAPPA FOLIGNO RPG EST/TILES/tilesets/ladders_45degrees.png");
+  // this.load.image("tiles30", "assets/MAPPA FOLIGNO RPG EST/TILES/METAL GEARS.png");
+  // this.load.image("tiles31", "assets/MAPPA FOLIGNO RPG EST/QUADRIVIO EST.png");
+  // this.load.image("tiles32", "assets/MAPPA FOLIGNO RPG EST/QUADRIVIO2.jpg");
+  // this.load.image("tiles33", "assets/MAPPA FOLIGNO RPG EST/TILES/rosoni piccoli.png");
+  // this.load.image("tiles34", "assets/MAPPA FOLIGNO RPG EST/Statua Garibaldi.png");
+  // this.load.image("tiles35", "assets/MAPPA FOLIGNO RPG EST/TILES/TETTI BASSI.png");
+  // this.load.image("tiles36", "assets/MAPPA FOLIGNO RPG EST/TILES/TETTI BASSI 2.png");
+  // this.load.image("tiles37", "assets/MAPPA FOLIGNO RPG EST/TILES/TETTI COMPLETI.png");
+  // this.load.image("tiles38", "assets/MAPPA FOLIGNO RPG EST/TILES/tetti frontali.png");
+  // this.load.image("tiles39", "assets/MAPPA FOLIGNO RPG OVEST/TILES/VARIE.png");
+  // this.load.image("tiles40", "assets/MAPPA FOLIGNO RPG OVEST/TILES/roofs1.png");
 
-  this.load.tilemapTiledJSON("map3", "assets/MAPPA FOLIGNO RPG OVEST/QUADRIVIO-OVEST.json");
-
-  this.load.atlas('BAsprites', 'assets/atlas/BeatriceArzittu.png', 'assets/atlas/BAsprites.json');
+  // this.load.tilemapTiledJSON("map3", "assets/MAPPA FOLIGNO RPG OVEST/QUADRIVIO-OVEST.json");
 
 }
 
@@ -77,46 +75,46 @@ create() {
   const map3 = this.make.tilemap({ key: "map3" });
 
   //uploading all the .png-files used for making the tilesets !! I'm hereeeeee
-  const tileset1 = map3.addTilesetImage("45 GRADI", "tiles1");
-  const tileset2 = map3.addTilesetImage("castle1", "tiles2");
-  const tileset3 = map3.addTilesetImage("castle45GRADI", "tiles3");
-  const tileset4 = map3.addTilesetImage("CHIESA", "tiles4");
-  const tileset5 = map3.addTilesetImage("ESTERNO1", "tiles5");
-  const tileset6 = map3.addTilesetImage("ESTERNO2", "tiles6");
-  const tileset7 = map3.addTilesetImage("Inside_A5", "tiles7");
-  const tileset8 = map3.addTilesetImage("Inside_C", "tiles8");
-  const tileset9 = map3.addTilesetImage("muri1", "tiles9");
-  const tileset10 = map3.addTilesetImage("muri2", "tiles10");
-  const tileset11 = map3.addTilesetImage("MURI3", "tiles11");
-  const tileset12 = map3.addTilesetImage("Outside_A3", "tiles12");
-  const tileset13 = map3.addTilesetImage("PAVIMENTI1", "tiles13");
-  const tileset14 = map3.addTilesetImage("PORTE1", "tiles14");
-  const tileset15 = map3.addTilesetImage("PORTE2", "tiles15");
-  const tileset16 = map3.addTilesetImage("PORTE45", "tiles16");
-  const tileset17 = map3.addTilesetImage("ROOF1", "tiles17");
-  const tileset18 = map3.addTilesetImage("ROOF2", "tiles18");
-  const tileset19 = map3.addTilesetImage("SF_Outside_A5", "tiles19");
-  const tileset20 = map3.addTilesetImage("STRADE", "tiles20");
-  const tileset21 = map3.addTilesetImage("TETTI1", "tiles21");
-  const tileset22 = map3.addTilesetImage("World_C", "tiles22");
-  const tileset23 = map3.addTilesetImage("AIUOLA", "tiles23");
-  const tileset24 = map3.addTilesetImage("ALBERI", "tiles24");
-  const tileset25 = map3.addTilesetImage("ancient doors", "tiles25");
-  const tileset26 = map3.addTilesetImage("BALCONI", "tiles26");
-  const tileset27 = map3.addTilesetImage("big windows", "tiles27");
-  const tileset28 = map3.addTilesetImage("GLASS DOORS", "tiles28");
-  const tileset29 = map3.addTilesetImage("ladders_45degrees", "tiles29");
-  const tileset30 = map3.addTilesetImage("METAL GEARS", "tiles30");
-  const tileset31 = map3.addTilesetImage("QUADRIVIO EST", "tiles31");
-  const tileset32 = map3.addTilesetImage("QUADRIVIO2", "tiles32");
-  const tileset33 = map3.addTilesetImage("rosoni piccoli", "tiles33");
-  const tileset34 = map3.addTilesetImage("Statua Garibaldi", "tiles34");
-  const tileset35 = map3.addTilesetImage("TETTI BASSI", "tiles35");
-  const tileset36 = map3.addTilesetImage("TETTI BASSI 2", "tiles36");
-  const tileset37 = map3.addTilesetImage("TETTI COMPLETI", "tiles37");
-  const tileset38 = map3.addTilesetImage("tetti frontali", "tiles38");
-  const tileset39 = map3.addTilesetImage("VARIE", "tiles39");
-  const tileset40 = map3.addTilesetImage("roofs1", "tiles40");
+  const tileset1 = map3.addTilesetImage("45 GRADI", "ESTtiles1");
+  const tileset2 = map3.addTilesetImage("castle1", "ESTtiles2");
+  const tileset3 = map3.addTilesetImage("castle45GRADI", "ESTtiles3");
+  const tileset4 = map3.addTilesetImage("CHIESA", "ESTtiles4");
+  const tileset5 = map3.addTilesetImage("ESTERNO1", "ESTtiles5");
+  const tileset6 = map3.addTilesetImage("ESTERNO2", "ESTtiles6");
+  const tileset7 = map3.addTilesetImage("Inside_A5", "ESTtiles7");
+  const tileset8 = map3.addTilesetImage("Inside_C", "ESTtiles8");
+  const tileset9 = map3.addTilesetImage("muri1", "ESTtiles9");
+  const tileset10 = map3.addTilesetImage("muri2", "OVESTtiles10");
+  const tileset11 = map3.addTilesetImage("MURI3", "ESTtiles11");
+  const tileset12 = map3.addTilesetImage("Outside_A3", "OVESTtiles12");
+  const tileset13 = map3.addTilesetImage("PAVIMENTI1", "ESTtiles13");
+  const tileset14 = map3.addTilesetImage("PORTE1", "ESTtiles14");
+  const tileset15 = map3.addTilesetImage("PORTE2", "ESTtiles15");
+  const tileset16 = map3.addTilesetImage("PORTE45", "ESTtiles16");
+  const tileset17 = map3.addTilesetImage("ROOF1", "ESTtiles17");
+  const tileset18 = map3.addTilesetImage("ROOF2", "ESTtiles18");
+  const tileset19 = map3.addTilesetImage("SF_Outside_A5", "ESTtiles19");
+  const tileset20 = map3.addTilesetImage("STRADE", "ESTtiles20");
+  const tileset21 = map3.addTilesetImage("TETTI1", "ESTtiles21");
+  const tileset22 = map3.addTilesetImage("World_C", "ESTtiles22");
+  const tileset23 = map3.addTilesetImage("AIUOLA", "ESTtiles23");
+  const tileset24 = map3.addTilesetImage("ALBERI", "ESTtiles24");
+  const tileset25 = map3.addTilesetImage("ancient doors", "ESTtiles25");
+  const tileset26 = map3.addTilesetImage("BALCONI", "ESTtiles26");
+  const tileset27 = map3.addTilesetImage("big windows", "ESTtiles27");
+  const tileset28 = map3.addTilesetImage("GLASS DOORS", "ESTtiles28");
+  const tileset29 = map3.addTilesetImage("ladders_45degrees", "ESTtiles29");
+  const tileset30 = map3.addTilesetImage("METAL GEARS", "ESTtiles30");
+  const tileset31 = map3.addTilesetImage("QUADRIVIO EST", "ESTtiles31");
+  const tileset32 = map3.addTilesetImage("QUADRIVIO2", "ESTtiles32");
+  const tileset33 = map3.addTilesetImage("rosoni piccoli", "ESTtiles33");
+  const tileset34 = map3.addTilesetImage("Statua Garibaldi", "ESTtiles34");
+  const tileset35 = map3.addTilesetImage("TETTI BASSI", "ESTtiles35");
+  const tileset36 = map3.addTilesetImage("TETTI BASSI 2", "ESTtiles36");
+  const tileset37 = map3.addTilesetImage("TETTI COMPLETI", "ESTtiles37");
+  const tileset38 = map3.addTilesetImage("tetti frontali", "ESTtiles38");
+  const tileset39 = map3.addTilesetImage("VARIE", "OVESTtiles39");
+  const tileset40 = map3.addTilesetImage("roofs1", "OVESTtiles40");
 
 
 
@@ -147,8 +145,8 @@ create() {
 
   //declaring spawnpoint
   const spawnPoint = map3.findObject("Objects", obj => obj.name === "Spawn Point");
-  //spawnPoint.x=this.xpixel;
-  //spawnPoint.y=this.ypixel;
+  spawnPoint.x=this.xpixel;
+  spawnPoint.y=this.ypixel;
   
   // Create a sprite with physics enabled via the physics system. The image used for the sprite has
   // a bit of whitespace, so I'm using setSize & setOffset to control the size of the player's body.
@@ -292,9 +290,9 @@ end() {
 		
 }
 
-// goEast() {
-//   this.scene.start('sceneMiddleFoligno', { xpixel: 15, ypixel:player.y });
-//   }
+goEast() {
+  this.scene.start('sceneMiddleFoligno', { xpixel: 15, ypixel:player.y });
+   }
   
   
 }

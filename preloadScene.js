@@ -137,6 +137,13 @@ export default class PreloadScene extends Phaser.Scene
 		this.load.image("ESTtiles39", "assets/MAPPA FOLIGNO RPG EST/TILES/VARIE.png");
 	  
 		this.load.tilemapTiledJSON("map2", "assets/MAPPA FOLIGNO RPG EST/QUADRIVIO-EST.json");
+
+		this.load.image("OVESTtiles39", "assets/MAPPA FOLIGNO RPG OVEST/TILES/VARIE.png");
+		this.load.image("OVESTtiles40", "assets/MAPPA FOLIGNO RPG OVEST/TILES/roofs1.png");
+		this.load.image("OVESTtiles12", "assets/MAPPA FOLIGNO RPG OVEST/TILES/Outside_A3.png");
+		this.load.image("OVESTtiles10", "assets/MAPPA FOLIGNO RPG OVEST/TILES/tilesets/muri2.png");
+
+		this.load.tilemapTiledJSON("map3", "assets/MAPPA FOLIGNO RPG OVEST/QUADRIVIO-OVEST.json");
 	}
 	  
     }
