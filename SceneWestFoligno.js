@@ -3,9 +3,13 @@
  * Althered by : Aaron Sprangers
  */
 
+ import PreloadScene from './preloadScene.js';
+
  let cursors;
  let player;
  let showDebug = false;
+
+ var preloadScene = new PreloadScene();
  
  class SceneWestFoligno extends Phaser.Scene {
  
@@ -292,7 +296,7 @@ end() {
 }
 
 goEast() {
-  this.scene.start('sceneMiddleFoligno', { xpixel: 25, ypixel:player.y });
+  this.scene.start('sceneMiddleFoligno', { xpixel: 50, ypixel:player.y });
    }
   
   
