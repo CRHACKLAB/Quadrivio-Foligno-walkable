@@ -87,7 +87,7 @@ create() {
   const tileset6 = map3.addTilesetImage("ESTERNO2", "ESTtiles6");
   const tileset7 = map3.addTilesetImage("Inside_A5", "ESTtiles7");
   const tileset8 = map3.addTilesetImage("Inside_C", "ESTtiles8");
-  const tileset9 = map3.addTilesetImage("muri1", "ESTtiles9");
+  const tileset9 = map3.addTilesetImage("muri1", "OVESTtiles9");
   const tileset10 = map3.addTilesetImage("muri2", "OVESTtiles10");
   const tileset11 = map3.addTilesetImage("MURI3", "ESTtiles11");
   const tileset12 = map3.addTilesetImage("Outside_A3", "OVESTtiles12");
