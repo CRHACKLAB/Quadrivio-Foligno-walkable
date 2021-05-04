@@ -274,6 +274,7 @@ update(time, delta) {
 
     if(player.x>9770){
       this.goEast();
+      console.log(player.x);
 
     }
 
