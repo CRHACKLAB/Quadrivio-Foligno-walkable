@@ -78,7 +78,7 @@ create() {
   //creating the map
   const map3 = this.make.tilemap({ key: "map3" });
 
-  //uploading all the .png-files used for making the tilesets !! I'm hereeeeee
+  //problem with 1 house in West
   const tileset1 = map3.addTilesetImage("45 GRADI", "ESTtiles1");
   const tileset2 = map3.addTilesetImage("castle1", "ESTtiles2");
   const tileset3 = map3.addTilesetImage("castle45GRADI", "ESTtiles3");
