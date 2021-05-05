@@ -175,7 +175,7 @@ create() {
 
   cursors = this.input.keyboard.createCursorKeys();
 
-  this.physics.world.setBounds(0, 0, map2.widthInPixels, map2.heightInPixels, true, true, true, true);
+  this.physics.world.setBounds(0, 0, map3.widthInPixels, map3.heightInPixels, true, true, true, true);
   player.body.collideWorldBounds=true;
 }
 
