@@ -91,10 +91,6 @@ export default class PreloadScene extends Phaser.Scene
 		this.load.image("tiles20", "assets/MAPPA FOLIGNO RPG/TILES/STRADE.png");
 		this.load.image("tiles21", "assets/MAPPA FOLIGNO RPG/TILES/tilesets/Outside_C.png");
 		this.load.image("tiles22", "assets/MAPPA FOLIGNO RPG/TILES/tilesets/World_C.png");
-	  
-		this.load.tilemapTiledJSON("startmap", "assets/MAPPA FOLIGNO RPG/QUADRIVIO.json");
-	  
-		this.load.atlas('BAsprites', 'assets/atlas/BeatriceArzittu.png', 'assets/atlas/BAsprites.json');
 
 		this.load.image("ESTtiles1", "assets/MAPPA FOLIGNO RPG EST/TILES/tilesets/45 GRADI.png");
 		this.load.image("ESTtiles2", "assets/MAPPA FOLIGNO RPG EST/TILES/tilesets/castle1.png");
@@ -135,8 +131,6 @@ export default class PreloadScene extends Phaser.Scene
 		this.load.image("ESTtiles37", "assets/MAPPA FOLIGNO RPG EST/TILES/TETTI COMPLETI.png");
 		this.load.image("ESTtiles38", "assets/MAPPA FOLIGNO RPG EST/TILES/tetti frontali.png");
 		this.load.image("ESTtiles39", "assets/MAPPA FOLIGNO RPG EST/TILES/VARIE.png");
-	  
-		this.load.tilemapTiledJSON("map2", "assets/MAPPA FOLIGNO RPG EST/QUADRIVIO-EST.json");
 
 		this.load.image("OVESTtiles39", "assets/MAPPA FOLIGNO RPG OVEST/TILES/VARIE.png");
 		this.load.image("OVESTtiles40", "assets/MAPPA FOLIGNO RPG OVEST/TILES/roofs1.png");
@@ -144,14 +138,18 @@ export default class PreloadScene extends Phaser.Scene
 		this.load.image("OVESTtiles10", "assets/MAPPA FOLIGNO RPG OVEST/TILES/tilesets/muri2.png");
 		this.load.image("OVESTtiles9", "assets/MAPPA FOLIGNO RPG OVEST/TILES/tilesets/muri1.png");
 
+		this.load.tilemapTiledJSON("startmap", "assets/MAPPA FOLIGNO RPG/QUADRIVIO.json");
+		this.load.tilemapTiledJSON("map2", "assets/MAPPA FOLIGNO RPG EST/QUADRIVIO-EST.json");
 		this.load.tilemapTiledJSON("map3", "assets/MAPPA FOLIGNO RPG OVEST/QUADRIVIO-OVEST.json");
+
+		this.load.atlas('BAsprites', 'assets/atlas/BeatriceArzittu.png', 'assets/atlas/BAsprites.json');
 	}
 	  
     }
 
     create ()
     {
-		console.log('we did it');
+		console.log('preload completed.');
         this.scene.start('startSceneMiddleFoligno');
     }
 }

@@ -1,41 +1,37 @@
-/**
- * Author: Michael Hadley, mikewesthad.com
- * Althered by : Aaron Sprangers
+/*
+Author: Aaron Sprangers
  */
  import PreloadScene from './preloadScene.js';
 
  let cursors;
  let player;
- let showDebug = false;
+ let maximumX=9800;
+ let minimumX=20;
+ let maximumY;
+ let minimumY;
 
  var preloadScene = new PreloadScene();
  
  class SceneEastFoligno extends Phaser.Scene {
  
-   constructor() {
-     super({key : 'sceneEastFoligno'});
-         
-   }
-     
- 
-   init(data) {
+constructor() {
+     super({key : 'sceneEastFoligno'}); 
+  }
 
+init(data) {
     this.xpixel = data.xpixel;
     this.ypixel = data.ypixel;
- 
    };
 
-   preload() { //normally finished
+preload() { //normally finished
     preloadScene;
-
-}
+  }
 
 create() {
-
-  //creating the map
+//creating the map
   const map2 = this.make.tilemap({ key: "map2" });
 
-  //uploading all the .png-files used for making the tilesets !! I'm hereeeeee
+//uploading all the .png-files used for making the tilesets !! I'm hereeeeee
   const tileset1 = map2.addTilesetImage("45 GRADI", "ESTtiles1");
   const tileset2 = map2.addTilesetImage("castle1", "ESTtiles2");
   const tileset3 = map2.addTilesetImage("castle45GRADI", "ESTtiles3");
@@ -76,9 +72,7 @@ create() {
   const tileset38 = map2.addTilesetImage("tetti frontali", "ESTtiles38");
   const tileset39 = map2.addTilesetImage("VARIE", "ESTtiles39");
 
-
-
-  // what tilesets are in which layers
+// what tilesets are in which layers
   const belowLayer3 = map2.createLayer('Livello tile 6', [  tileset1, tileset2, tileset3, tileset4, tileset5, tileset6, tileset7, tileset8, tileset9, tileset10, tileset11, tileset12, tileset13, tileset14, tileset15, tileset16, tileset17, tileset18,tileset19, tileset20, tileset21, tileset22, tileset23, tileset24, tileset25, tileset26, tileset27, tileset28, tileset29, tileset30, tileset31, tileset32, tileset33, tileset34, tileset35, tileset36, tileset37, tileset38, tileset39 ]); 
   const belowLayer2 = map2.createLayer('PIAZZE', [  tileset1, tileset2, tileset3, tileset4, tileset5, tileset6, tileset7, tileset8, tileset9, tileset10, tileset11, tileset12, tileset13, tileset14, tileset15, tileset16, tileset17, tileset18,tileset19, tileset20, tileset21, tileset22, tileset23, tileset24, tileset25, tileset26, tileset27, tileset28, tileset29, tileset30, tileset31, tileset32, tileset33, tileset34, tileset35, tileset36, tileset37, tileset38, tileset39 ]); 
   const belowLayer = map2.createLayer('STREET', [  tileset1, tileset2, tileset3, tileset4, tileset5, tileset6, tileset7, tileset8, tileset9, tileset10, tileset11, tileset12, tileset13, tileset14, tileset15, tileset16, tileset17, tileset18,tileset19, tileset20, tileset21, tileset22, tileset23, tileset24, tileset25, tileset26, tileset27, tileset28, tileset29, tileset30, tileset31, tileset32, tileset33, tileset34, tileset35, tileset36, tileset37, tileset38, tileset39 ]); 
@@ -87,88 +81,88 @@ create() {
   const worldLayer = map2.createLayer('DETAILS', [  tileset1, tileset2, tileset3, tileset4, tileset5, tileset6, tileset7, tileset8, tileset9, tileset10, tileset11, tileset12, tileset13, tileset14, tileset15, tileset16, tileset17, tileset18,tileset19, tileset20, tileset21, tileset22, tileset23, tileset24, tileset25, tileset26, tileset27, tileset28, tileset29, tileset30, tileset31, tileset32, tileset33, tileset34, tileset35, tileset36, tileset37, tileset38, tileset39 ]); 
   const worldLayer3 = map2.createLayer('Livello tile 7', [  tileset1, tileset2, tileset3, tileset4, tileset5, tileset6, tileset7, tileset8, tileset9, tileset10, tileset11, tileset12, tileset13, tileset14, tileset15, tileset16, tileset17, tileset18,tileset19, tileset20, tileset21, tileset22, tileset23, tileset24, tileset25, tileset26, tileset27, tileset28, tileset29, tileset30, tileset31, tileset32, tileset33, tileset34, tileset35, tileset36, tileset37, tileset38, tileset39 ]); 
 
-//inserting how to set the collisions
+// inserting how to set the collisions
    worldLayer.setCollisionByProperty({ collides: true });
    worldLayer2.setCollisionByProperty({ collides: true });
    worldLayer3.setCollisionByProperty({ collides: true });
 
-// // because there were some walltiles and such in these layers, I made them collide aswell
+// because there were some walltiles and such in these layers, I made them collide aswell
    belowLayer.setCollisionByProperty({ collides: true });
    belowLayer2.setCollisionByProperty({ collides: true });
    belowLayer3.setCollisionByProperty({ collides: true });
 
-  //aboveLayer.setDepth(10); -> is used for setting the dept of a layer, so the person playing it can for example walk underneath it
+//aboveLayer.setDepth(10); -> is used for setting the dept of a layer, so the person playing it can for example walk underneath it
 
-  //declaring spawnpoint
+//declaring spawnpoint
   const spawnPoint = map2.findObject("Objects", obj => obj.name === "Spawn Point");
   spawnPoint.x=this.xpixel;
   spawnPoint.y=this.ypixel;
   
-  // Create a sprite with physics enabled via the physics system. The image used for the sprite has
-  // a bit of whitespace, so I'm using setSize & setOffset to control the size of the player's body.
+// Create a sprite with physics enabled via the physics system. The image used for the sprite has
+// a bit of whitespace, so I'm using setSize & setOffset to control the size of the player's body.
 
-player = this.physics.add
-.sprite(spawnPoint.x, spawnPoint.y, "BAsprites", "front002")
-.setSize(30, 40)
-.setOffset(0, 24);
+  player = this.physics.add
+  .sprite(spawnPoint.x, spawnPoint.y, "BAsprites", "front002")
+  .setSize(30, 40)
+  .setOffset(0, 24);
 
-  // Watch the player and worldLayer for collisions, for the duration of the scene:
+// Watch the player and worldLayer for collisions, for the duration of the scene:
   this.physics.add.collider(player, worldLayer);
   this.physics.add.collider(player, worldLayer2);
   this.physics.add.collider(player, worldLayer3);
 
-  //because there were some walltiles and such in these layers, I made them collide aswell
+//because there were some walltiles and such in these layers, I made them collide aswell
   this.physics.add.collider(player, belowLayer); 
   this.physics.add.collider(player, belowLayer2);
   this.physics.add.collider(player, belowLayer3);
 
 // Create the player's walking animations from the texture atlas. These are stored in the global
 // animation manager so any sprite can access them.
-const anims = this.anims;
-anims.create({
-  key: "BA-left-walk",
-  frames: anims.generateFrameNames("BAsprites", {
-    prefix: "left",
-    start: 1,
-    end: 3,
-    zeroPad: 3
-  }),
-  frameRate: 10,
-  repeat: -1
-});
-anims.create({
-  key: "BA-right-walk",
-  frames: anims.generateFrameNames("BAsprites", {
-    prefix: "right",
-    start: 1,
-    end: 3,
-    zeroPad: 3
-  }),
-  frameRate: 10,
-  repeat: -1
-});
-anims.create({
-  key: "BA-front-walk",
-  frames: anims.generateFrameNames("BAsprites", {
-    prefix: "front",
-    start: 1,
-    end: 3,
-    zeroPad: 3
-  }),
-  frameRate: 10,
-  repeat: -1
-});
-anims.create({
-  key: "BA-back-walk",
-  frames: anims.generateFrameNames("BAsprites", {
-    prefix: "back",
-    start: 1,
-    end: 3,
-    zeroPad: 3
-  }),
-  frameRate: 10,
-  repeat: -1
-});
+  const anims = this.anims;
+  anims.create({
+    key: "BA-left-walk",
+    frames: anims.generateFrameNames("BAsprites", {
+      prefix: "left",
+      start: 1,
+      end: 3,
+      zeroPad: 3
+    }),
+    frameRate: 10,
+    repeat: -1
+  });
+  anims.create({
+    key: "BA-right-walk",
+    frames: anims.generateFrameNames("BAsprites", {
+      prefix: "right",
+      start: 1,
+      end: 3,
+      zeroPad: 3
+    }),
+    frameRate: 10,
+    repeat: -1
+  });
+  anims.create({
+    key: "BA-front-walk",
+    frames: anims.generateFrameNames("BAsprites", {
+      prefix: "front",
+      start: 1,
+      end: 3,
+      zeroPad: 3
+    }),
+    frameRate: 10,
+    repeat: -1
+  });
+  anims.create({
+    key: "BA-back-walk",
+    frames: anims.generateFrameNames("BAsprites", {
+      prefix: "back",
+      start: 1,
+      end: 3,
+      zeroPad: 3
+    }),
+    frameRate: 10,
+    repeat: -1
+  });
 
   const camera = this.cameras.main;
   camera.startFollow(player); //camera follows let player
@@ -176,52 +170,35 @@ anims.create({
 
   cursors = this.input.keyboard.createCursorKeys();
 
-  // Help text that has a "fixed" position on the screen
-  this.add
-    .text(16, 16, 'Arrow keys to move', {
-      font: "18px monospace",
-      fill: "#000000",
-      padding: { x: 20, y: 10 },
-      backgroundColor: "#ffffff"
-    })
-    .setScrollFactor(0)
-    .setDepth(30);
-
-  // Debug graphics - Under Construction
-
-  //not yet applied *******
-  
-  this.physics.world.setBounds(0, 0, map2.widthInPixels, map2.heightInPixels, true, true, true, true); // it works
+  this.physics.world.setBounds(0, 0, map2.widthInPixels, map2.heightInPixels, true, true, true, true);
   player.body.collideWorldBounds=true;
-
-  //not yet applied *******
 }
 
 update(time, delta) {
   const speed = 375;
   const prevVelocity = player.body.velocity.clone();
 
-  // Stop any previous movement from the last frame
+// Stop any previous movement from the last frame
   player.body.setVelocity(0);
 
-  // Horizontal movement
+// Horizontal movement
   if (cursors.left.isDown) {
     player.body.setVelocityX(-speed);
   } else if (cursors.right.isDown) {
     player.body.setVelocityX(speed);
   }
 
-  // Vertical movement
+// Vertical movement
   if (cursors.up.isDown) {
     player.body.setVelocityY(-speed);
   } else if (cursors.down.isDown) {
     player.body.setVelocityY(speed);
   }
 
-  // Normalize and scale the velocity so that player can't move faster along a diagonal
+// Normalize and scale the velocity so that player can't move faster along a diagonal
   player.body.velocity.normalize().scale(speed);
 
-  // Update the animation last and give left/right animations precedence over up/down animations
+// Update the animation last and give left/right animations precedence over up/down animations
   if (cursors.left.isDown) {
     player.anims.play("BA-left-walk", true);
   } else if (cursors.right.isDown) {
@@ -233,28 +210,24 @@ update(time, delta) {
   } else {
     player.anims.stop();
 
-    if(player.x<20){
+    if(player.x<minimumX){
       this.goWest();
     }
-
-    // If we were moving, pick and idle frame to use
+    
+// If we were moving, pick and idle frame to use
     if (prevVelocity.x < 0) player.setTexture("BAsprites", "left002");
     else if (prevVelocity.x > 0) player.setTexture("BAsprites", "right002");
     else if (prevVelocity.y < 0) player.setTexture("BAsprites", "back002");
     else if (prevVelocity.y > 0) player.setTexture("BAsprites", "front002");
   }
-  
 }
 
-end() {
-		
+end() {	
 }
 
 goWest() {
   this.scene.start('sceneMiddleFoligno', { xpixel: 9800, ypixel:player.y });
   }
-  
-  
 }
 
 export default SceneEastFoligno;
