@@ -8,8 +8,8 @@ let cursors;
 let player;
 let maximumX=9800;
 let minimumX=20;
-let maximumY;
-let minimumY;
+let maximumY=6800;
+let minimumY=2;
 
 var preloadScene = new PreloadScene();
 
@@ -42,7 +42,7 @@ create() {
   const tileset8 = startmap.addTilesetImage("Inside_C", "tiles8");
   const tileset9 = startmap.addTilesetImage("muri1", "tiles9");
   const tileset10 = startmap.addTilesetImage("muri2", "tiles10");
-  const tileset11 = startmap.addTilesetImage("MURI3", "tiles11");
+  const tileset11 = startmap.addTilesetImage("Inside_A4", "ESTtiles11");
   const tileset12 = startmap.addTilesetImage("Outside_A3", "tiles12");
   const tileset13 = startmap.addTilesetImage("PAVIMENTI1", "tiles13");
   const tileset14 = startmap.addTilesetImage("PORTE1", "tiles14");
@@ -55,24 +55,25 @@ create() {
   const tileset21 = startmap.addTilesetImage("TETTI1", "tiles21");
   const tileset22 = startmap.addTilesetImage("World_C", "tiles22");
 
+  
+
 // what tilesets are in which layers
-  const belowLayer = startmap.createLayer('STREET', [  tileset1, tileset2, tileset3, tileset4, tileset5, tileset6, tileset7, tileset8, tileset9, tileset10, tileset11, tileset12, tileset13, tileset14, tileset15, tileset16, tileset17, tileset18,tileset19, tileset20, tileset21, tileset22 ]); 
-  const belowLayer2 = startmap.createLayer('PIAZZE', [  tileset1, tileset2, tileset3, tileset4, tileset5, tileset6, tileset7, tileset8, tileset9, tileset10, tileset11, tileset12, tileset13, tileset14, tileset15, tileset16, tileset17, tileset18,tileset19, tileset20, tileset21, tileset22 ]); 
+  const belowLayer1 = startmap.createLayer('STREET', [  tileset1, tileset2, tileset3, tileset4, tileset5, tileset6, tileset7, tileset8, tileset9, tileset10, tileset11, tileset12, tileset13, tileset14, tileset15, tileset16, tileset17, tileset18,tileset19, tileset20, tileset21, tileset22 ]); 
+  const belowLayer2 = startmap.createLayer('PLAZAS', [  tileset1, tileset2, tileset3, tileset4, tileset5, tileset6, tileset7, tileset8, tileset9, tileset10, tileset11, tileset12, tileset13, tileset14, tileset15, tileset16, tileset17, tileset18,tileset19, tileset20, tileset21, tileset22 ]); 
 
-  const worldLayer = startmap.createLayer('CASE', [  tileset1, tileset2, tileset3, tileset4, tileset5, tileset6, tileset7, tileset8, tileset9, tileset10, tileset11, tileset12, tileset13, tileset14, tileset15, tileset16, tileset17, tileset18,tileset19, tileset20, tileset21, tileset22 ]); 
-  const worldLayer2 = startmap.createLayer('PORTE E FINESTRE', [  tileset1, tileset2, tileset3, tileset4, tileset5, tileset6, tileset7, tileset8, tileset9, tileset10, tileset11, tileset12, tileset13, tileset14, tileset15, tileset16, tileset17, tileset18,tileset19, tileset20, tileset21, tileset22 ]); 
-  const worldLayer3 = startmap.createLayer('DETTAGLI', [  tileset1, tileset2, tileset3, tileset4, tileset5, tileset6, tileset7, tileset8, tileset9, tileset10, tileset11, tileset12, tileset13, tileset14, tileset15, tileset16, tileset17, tileset18,tileset19, tileset20, tileset21, tileset22 ]); 
+  const worldLayer1 = startmap.createLayer('BUILDINGS', [  tileset1, tileset2, tileset3, tileset4, tileset5, tileset6, tileset7, tileset8, tileset9, tileset10, tileset11, tileset12, tileset13, tileset14, tileset15, tileset16, tileset17, tileset18,tileset19, tileset20, tileset21, tileset22 ]); 
+  const worldLayer2 = startmap.createLayer('DETAILS', [  tileset1, tileset2, tileset3, tileset4, tileset5, tileset6, tileset7, tileset8, tileset9, tileset10, tileset11, tileset12, tileset13, tileset14, tileset15, tileset16, tileset17, tileset18,tileset19, tileset20, tileset21, tileset22 ]); 
+  const worldLayer3 = startmap.createLayer('DOORS AND WINDOWS', [  tileset1, tileset2, tileset3, tileset4, tileset5, tileset6, tileset7, tileset8, tileset9, tileset11, tileset10, tileset12, tileset13, tileset14, tileset15, tileset16, tileset17, tileset18,tileset19, tileset20, tileset21, tileset22 ]); 
 
+  const aboveLayer1 = startmap.createLayer('ROOFS OVER STREETS', [  tileset1, tileset2, tileset3, tileset4, tileset5, tileset6, tileset7, tileset8, tileset9, tileset11, tileset10, tileset12, tileset13, tileset14, tileset15, tileset16, tileset17, tileset18,tileset19, tileset20, tileset21, tileset22 ]); 
+  const aboveLayer2 = startmap.createLayer('DETAILS OVER STREETS', [  tileset1, tileset2, tileset3, tileset4, tileset5, tileset6, tileset7, tileset8, tileset9, tileset11, tileset10, tileset12, tileset13, tileset14, tileset15, tileset16, tileset17, tileset18,tileset19, tileset20, tileset21, tileset22 ]);
 //inserting how to set the collisions
-  worldLayer.setCollisionByProperty({ collides: true });
+  worldLayer1.setCollisionByProperty({ collides: true });
   worldLayer2.setCollisionByProperty({ collides: true });
   worldLayer3.setCollisionByProperty({ collides: true });
 
-// because there were some walltiles and such in these layers, I made them collide aswell
-  belowLayer.setCollisionByProperty({ collides: true });
-  belowLayer2.setCollisionByProperty({ collides: true });
-
-//aboveLayer.setDepth(10); -> is used for setting the dept of a layer, so the person playing it can for example walk underneath it
+aboveLayer1.setDepth(10); // is used for setting the dept of a layer, so the person playing it can for example walk underneath it
+aboveLayer2.setDepth(10);
 
 //declaring spawnpoint
   const spawnPoint = startmap.findObject("Objects", obj => obj.name === "Spawn Point");
@@ -85,13 +86,9 @@ create() {
   .setOffset(0, 24);
 
 // Watch the player and worldLayer for collisions, for the duration of the scene:
-  this.physics.add.collider(player, worldLayer);
+  this.physics.add.collider(player, worldLayer1);
   this.physics.add.collider(player, worldLayer2);
   this.physics.add.collider(player, worldLayer3);
-
-// because there were some walltiles and such in these layers, I made them collide aswell
-  this.physics.add.collider(player, belowLayer); 
-  this.physics.add.collider(player, belowLayer2);
 
 // Create the player's walking animations from the texture atlas. These are stored in the global
 // animation manager so any sprite can access them.
@@ -196,6 +193,10 @@ update(time, delta) {
       this.goWest();
     }
 
+    if(player.y<minimumY){
+      this.goNord();
+    }
+
 // If we were moving, pick and idle frame to use
     if (prevVelocity.x < 0) player.setTexture("BAsprites", "left002");
     else if (prevVelocity.x > 0) player.setTexture("BAsprites", "right002");
@@ -215,6 +216,10 @@ goEast() {
 
 goWest() {
     this.scene.start('sceneWestFoligno', { xpixel: 9800, ypixel:player.y });
+  }
+
+goNord() {
+    this.scene.start('sceneNordFoligno', { xpixel: player.x, ypixel:7390 });
   }
 
 
