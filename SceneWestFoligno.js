@@ -160,6 +160,16 @@ create() {
     repeat: -1
   });
 
+  this.add
+  .text(16, 16, 'Foligno West', {
+    font: "18px monospace",
+    fill: "#000000",
+    padding: { x: 20, y: 10 },
+    backgroundColor: "#ffffff"
+  })
+  .setScrollFactor(0)
+  .setDepth(30);
+
   const camera = this.cameras.main;
   camera.startFollow(player); //camera follows let player
   camera.setBounds(0, 0, map3.widthInPixels, map3.heightInPixels); //camerasize is mapsize (of gameconfig.)
