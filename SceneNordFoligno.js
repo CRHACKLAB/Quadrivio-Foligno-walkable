@@ -9,7 +9,7 @@
  let player;
  let maximumX=9800;
  let minimumX=20;
- let maximumY=7420;
+ let maximumY=7460;
  let minimumY=5;
 
  var preloadScene = new PreloadScene();

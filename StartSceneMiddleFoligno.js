@@ -229,7 +229,7 @@ goWest() {
   }
 
 goNord() {
-    this.scene.start('sceneNordFoligno', { xpixel: player.x, ypixel:7390 });
+    this.scene.start('sceneNordFoligno', { xpixel: player.x, ypixel:7440 });
   }
 
 

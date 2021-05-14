@@ -8,6 +8,7 @@
  import SceneNordFoligno from "./SceneNordFoligno.js";
  import SceneMiddleFoligno from "./SceneMiddleFoligno.js";
  import PreloadScene from './preloadScene.js';
+ 
 
  // Our game scene
 var startSceneMiddleFoligno = new StartSceneMiddleFoligno();
