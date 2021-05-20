@@ -1,4 +1,12 @@
 { "compressionlevel":-1,
+ "editorsettings":
+    {
+     "export":
+        {
+         "format":"json",
+         "target":"QUADRIVIO-SUDOVEST.json"
+        }
+    },
  "height":157,
  "infinite":false,
  "layers":[
