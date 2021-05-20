@@ -166,7 +166,7 @@ create() {
   });
 
   this.add
-  .text(16, 16, 'Foligno South', {
+  .text(16, 16, 'Foligno South West', {
     font: "18px monospace",
     fill: "#000000",
     padding: { x: 20, y: 10 },
