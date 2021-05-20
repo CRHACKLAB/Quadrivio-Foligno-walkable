@@ -150,7 +150,7 @@ export default class PreloadScene extends Phaser.Scene
     create ()
     {
 		console.log('preload completed.');
-        this.scene.start('startSceneMiddleFoligno');
+        this.scene.start('sceneSouthFoligno');
     }
 }
 

@@ -55,7 +55,7 @@ game.scene.add("sceneMiddleFoligno", sceneMiddleFoligno, player);
 game.scene.add("sceneSouthFoligno", sceneSouthFoligno, player);
 
 // start title
-game.scene.start('sceneSouthFoligno');
+game.scene.start('preloadScene');
 
 
 
