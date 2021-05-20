@@ -140,6 +140,7 @@ export default class PreloadScene extends Phaser.Scene
 		this.load.tilemapTiledJSON("map2", "assets/QuadrivioAssets/QUADRIVIO-EST.json");
 		this.load.tilemapTiledJSON("map3", "assets/QuadrivioAssets/QUADRIVIO-OVEST.json");
 		this.load.tilemapTiledJSON("map4", "assets/QuadrivioAssets/QUADRIVIO-NORD.json");
+		this.load.tilemapTiledJSON("map5", "assets/QuadrivioAssets/QUADRIVIO-SUD.json");
 
 		this.load.atlas('BAsprites', 'assets/atlas/BeatriceArzittu.png', 'assets/atlas/BAsprites.json');
 	}

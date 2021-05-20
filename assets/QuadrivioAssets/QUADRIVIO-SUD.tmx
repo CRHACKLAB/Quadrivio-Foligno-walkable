@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.5" tiledversion="1.5.0" orientation="orthogonal" renderorder="right-down" width="205" height="157" tilewidth="48" tileheight="48" infinite="0" nextlayerid="31" nextobjectid="3">
+<map version="1.5" tiledversion="1.5.0" orientation="orthogonal" renderorder="right-down" width="205" height="157" tilewidth="48" tileheight="48" infinite="0" nextlayerid="32" nextobjectid="4">
  <tileset firstgid="1" name="World_C" tilewidth="48" tileheight="48" tilecount="256" columns="16">
   <image source="TILES/tilesets/World_C.png" width="768" height="768"/>
   <tile id="0">
@@ -32561,4 +32561,9 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>
+ <objectgroup id="31" name="Objects">
+  <object id="3" name="Spawn Point" x="3624" y="3974">
+   <point/>
+  </object>
+ </objectgroup>
 </map>
