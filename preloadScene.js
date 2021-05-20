@@ -141,6 +141,8 @@ export default class PreloadScene extends Phaser.Scene
 		this.load.tilemapTiledJSON("map3", "assets/QuadrivioAssets/QUADRIVIO-OVEST.json");
 		this.load.tilemapTiledJSON("map4", "assets/QuadrivioAssets/QUADRIVIO-NORD.json");
 		this.load.tilemapTiledJSON("map5", "assets/QuadrivioAssets/QUADRIVIO-SUD.json");
+		this.load.tilemapTiledJSON("map6", "assets/QuadrivioAssets/QUADRIVIO-SUDOVEST.json");
+		this.load.tilemapTiledJSON("map7", "assets/QuadrivioAssets/QUADRIVIO-SUDEST.json");
 
 		this.load.atlas('BAsprites', 'assets/atlas/BeatriceArzittu.png', 'assets/atlas/BAsprites.json');
 	}
@@ -150,7 +152,7 @@ export default class PreloadScene extends Phaser.Scene
     create ()
     {
 		console.log('preload completed.');
-        this.scene.start('sceneSouthFoligno');
+        this.scene.start('sceneSouthWestFoligno');
     }
 }
 
