@@ -21,8 +21,8 @@
    }
 
 init(data) {
-  this.xpixel = data.xpixel;
-  this.ypixel = data.ypixel;
+  //this.xpixel = data.xpixel;
+  //this.ypixel = data.ypixel;
    };
 
 preload() {
