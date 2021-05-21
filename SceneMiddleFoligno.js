@@ -247,7 +247,6 @@ update(time, delta) {
   }
 
   talkStuff() {
-    console.log("Hello, I am Enrico");
     this.scene.start('dialogue');
   }
 }

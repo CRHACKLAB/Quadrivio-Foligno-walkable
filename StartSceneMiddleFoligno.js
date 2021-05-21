@@ -239,7 +239,6 @@ goNord() {
   }
 
   talkStuff() {
-    console.log("Hello, I am Enrico");
     this.scene.start('dialogue');
     }
 
