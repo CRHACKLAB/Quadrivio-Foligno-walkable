@@ -144,6 +144,11 @@ export default class PreloadScene extends Phaser.Scene
 		this.load.tilemapTiledJSON("map6", "assets/QuadrivioAssets/QUADRIVIO-SUDOVEST.json");
 		this.load.tilemapTiledJSON("map7", "assets/QuadrivioAssets/QUADRIVIO-SUDEST.json");
 
+		this.load.image('background', 'assets/backgrounds/background.png');
+		this.load.image('Char1Happy', 'assets/characters/Char1Happy.png');
+		this.load.image('Char4NormalSchool', 'assets/characters/Char4NormalSchool.png');
+		this.load.image('Char2NormalSchoolMirror', 'assets/characters/Char2NormalSchoolMirror.png');
+
 		this.load.atlas('BAsprites', 'assets/atlas/BeatriceArzittu.png', 'assets/atlas/BAsprites.json');
 	}
 	  

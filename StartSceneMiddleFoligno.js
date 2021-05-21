@@ -207,6 +207,10 @@ update(time, delta) {
       this.goNord();
     }
 
+    if(player.x>=7200 && player.x<=7245 && player.y>=1918 && player.y<=1925){
+      this.input.keyboard.once('keydown-S', () => this.talkStuff());
+    }
+
 // If we were moving, pick and idle frame to use
     if (prevVelocity.x < 0) player.setTexture("BAsprites", "left002");
     else if (prevVelocity.x > 0) player.setTexture("BAsprites", "right002");
@@ -231,6 +235,11 @@ goWest() {
 goNord() {
     this.scene.start('sceneNordFoligno', { xpixel: player.x, ypixel:7440 });
   }
+
+  talkStuff() {
+    console.log("Hello, I am Enrico");
+    this.scene.start('dialogue');
+    }
 
 
 }
