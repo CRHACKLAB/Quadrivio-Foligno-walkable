@@ -34,50 +34,35 @@ create() {
   const map6 = this.make.tilemap({ key: "map6" });
 
 //problem with 1 house in West
-  const tileset1 = map6.addTilesetImage("45 GRADI", "ESTtiles1");
-  const tileset2 = map6.addTilesetImage("castle1", "ESTtiles2");
   const tileset3 = map6.addTilesetImage("castle45GRADI", "ESTtiles3");
-  const tileset4 = map6.addTilesetImage("CHIESA", "ESTtiles4");
   const tileset5 = map6.addTilesetImage("ESTERNO1", "ESTtiles5");
   const tileset6 = map6.addTilesetImage("ESTERNO2", "ESTtiles6");
   const tileset7 = map6.addTilesetImage("Inside_A5", "ESTtiles7");
   const tileset9 = map6.addTilesetImage("muri1", "OVESTtiles9");
   const tileset11 = map6.addTilesetImage("MURI3", "ESTtiles11");
   const tileset13 = map6.addTilesetImage("PAVIMENTI1", "ESTtiles13");
-  const tileset14 = map6.addTilesetImage("PORTE1", "ESTtiles14");
   const tileset15 = map6.addTilesetImage("PORTE2", "ESTtiles15");
   const tileset16 = map6.addTilesetImage("PORTE45", "ESTtiles16");
-  const tileset18 = map6.addTilesetImage("ROOF2", "ESTtiles18");
-  const tileset19 = map6.addTilesetImage("SF_Outside_A5", "ESTtiles19");
-  const tileset20 = map6.addTilesetImage("STRADE", "ESTtiles20");
   const tileset21 = map6.addTilesetImage("TETTI1", "ESTtiles21");
-  const tileset22 = map6.addTilesetImage("World_C", "ESTtiles22");
   const tileset23 = map6.addTilesetImage("AIUOLA", "ESTtiles23");
   const tileset24 = map6.addTilesetImage("ALBERI", "ESTtiles24");
-  const tileset25 = map6.addTilesetImage("ancient doors", "ESTtiles25");
-  const tileset26 = map6.addTilesetImage("BALCONI", "ESTtiles26");
-  const tileset27 = map6.addTilesetImage("big windows", "ESTtiles27");
-  const tileset28 = map6.addTilesetImage("GLASS DOORS", "ESTtiles28");
-  const tileset33 = map6.addTilesetImage("rosoni piccoli", "ESTtiles33");
   const tileset35 = map6.addTilesetImage("TETTI BASSI", "ESTtiles35");
   const tileset36 = map6.addTilesetImage("TETTI BASSI 2", "ESTtiles36");
   const tileset38 = map6.addTilesetImage("tetti frontali", "ESTtiles38");
-  const tileset39 = map6.addTilesetImage("VARIE", "OVESTtiles39");
-  const tileset40 = map6.addTilesetImage("roofs1", "OVESTtiles40");
 
 // what tilesets are in which layers
-  const belowLayer3 = map6.createLayer('STRADE', [  tileset1, tileset2, tileset3, tileset4, tileset5, tileset6, tileset7, tileset9, tileset11, tileset13, tileset14, tileset15, tileset16, tileset18,tileset19, tileset20, tileset21, tileset22, tileset23, tileset24, tileset25, tileset26, tileset27, tileset28, tileset33, tileset35, tileset36, tileset38, tileset39, tileset40 ]); 
-  const belowLayer2 = map6.createLayer('PIAZZE', [  tileset1, tileset2, tileset3, tileset4, tileset5, tileset6, tileset7, tileset9, tileset11, tileset13, tileset14, tileset15, tileset16, tileset18,tileset19, tileset20, tileset21, tileset22, tileset23, tileset24, tileset25, tileset26, tileset27, tileset28, tileset33, tileset35, tileset36, tileset38, tileset39, tileset40 ]); 
-  const belowLayer1 = map6.createLayer('SOTTO PIAZZE', [  tileset1, tileset2, tileset3, tileset4, tileset5, tileset6, tileset7, tileset9, tileset11, tileset13, tileset14, tileset15, tileset16, tileset18,tileset19, tileset20, tileset21, tileset22, tileset23, tileset24, tileset25, tileset26, tileset27, tileset28, tileset33, tileset35, tileset36, tileset38, tileset39, tileset40 ]);  
+  const belowLayer3 = map6.createLayer('STRADE', [  tileset3, tileset5, tileset6, tileset7, tileset9, tileset11, tileset13, tileset15, tileset16, tileset21, tileset23, tileset24, tileset35, tileset36, tileset38 ]); 
+  const belowLayer2 = map6.createLayer('PIAZZE', [  tileset3, tileset5, tileset6, tileset7, tileset9, tileset11, tileset13, tileset15, tileset16, tileset21, tileset23, tileset24, tileset35, tileset36, tileset38 ]); 
+  const belowLayer1 = map6.createLayer('SOTTO PIAZZE', [  tileset3, tileset5, tileset6, tileset7, tileset9, tileset11, tileset13, tileset15, tileset16, tileset21, tileset23, tileset24, tileset35, tileset36, tileset38 ]);  
   
-  const worldLayer1 = map6.createLayer('SOTTOPALAZZI', [  tileset1, tileset2, tileset3, tileset4, tileset5, tileset6, tileset7, tileset9, tileset11, tileset13, tileset14, tileset15, tileset16, tileset18,tileset19, tileset20, tileset21, tileset22, tileset23, tileset24, tileset25, tileset26, tileset27, tileset28, tileset33, tileset35, tileset36, tileset38, tileset39, tileset40 ]);  
-  const worldLayer2 = map6.createLayer('BUILDINGS', [  tileset1, tileset2, tileset3, tileset4, tileset5, tileset6, tileset7, tileset9, tileset11, tileset13, tileset14, tileset15, tileset16, tileset18,tileset19, tileset20, tileset21, tileset22, tileset23, tileset24, tileset25, tileset26, tileset27, tileset28, tileset33, tileset35, tileset36, tileset38, tileset39, tileset40 ]);  
-  const worldLayer3 = map6.createLayer('PALAZZI', [  tileset1, tileset2, tileset3, tileset4, tileset5, tileset6, tileset7, tileset9, tileset11, tileset13, tileset14, tileset15, tileset16, tileset18,tileset19, tileset20, tileset21, tileset22, tileset23, tileset24, tileset25, tileset26, tileset27, tileset28, tileset33, tileset35, tileset36, tileset38, tileset39, tileset40 ]); 
-  const worldLayer4 = map6.createLayer('DEC.PALAZZI', [  tileset1, tileset2, tileset3, tileset4, tileset5, tileset6, tileset7, tileset9, tileset11, tileset13, tileset14, tileset15, tileset16, tileset18,tileset19, tileset20, tileset21, tileset22, tileset23, tileset24, tileset25, tileset26, tileset27, tileset28, tileset33, tileset35, tileset36, tileset38, tileset39, tileset40 ]);  
-  const worldLayer5 = map6.createLayer('DECORATIONS', [  tileset1, tileset2, tileset3, tileset4, tileset5, tileset6, tileset7, tileset9, tileset11, tileset13, tileset14, tileset15, tileset16, tileset18,tileset19, tileset20, tileset21, tileset22, tileset23, tileset24, tileset25, tileset26, tileset27, tileset28, tileset33, tileset35, tileset36, tileset38, tileset39, tileset40 ]);  
+  const worldLayer1 = map6.createLayer('SOTTOPALAZZI', [  tileset3, tileset5, tileset6, tileset7, tileset9, tileset11, tileset13, tileset15, tileset16, tileset21, tileset23, tileset24, tileset35, tileset36, tileset38 ]);  
+  const worldLayer2 = map6.createLayer('BUILDINGS', [  tileset3, tileset5, tileset6, tileset7, tileset9, tileset11, tileset13, tileset15, tileset16, tileset21, tileset23, tileset24, tileset35, tileset36, tileset38 ]);  
+  const worldLayer3 = map6.createLayer('PALAZZI', [  tileset3, tileset5, tileset6, tileset7, tileset9, tileset11, tileset13, tileset15, tileset16, tileset21, tileset23, tileset24, tileset35, tileset36, tileset38 ]); 
+  const worldLayer4 = map6.createLayer('DEC.PALAZZI', [  tileset3, tileset5, tileset6, tileset7, tileset9, tileset11, tileset13, tileset15, tileset16, tileset21, tileset23, tileset24, tileset35, tileset36, tileset38 ]);  
+  const worldLayer5 = map6.createLayer('DECORATIONS', [  tileset3, tileset5, tileset6, tileset7, tileset9, tileset11, tileset13, tileset15, tileset16, tileset21, tileset23, tileset24, tileset35, tileset36, tileset38 ]);  
   
-  const aboveLayer1 = map6.createLayer('ROOFS OVER STREETS', [  tileset1, tileset2, tileset3, tileset4, tileset5, tileset6, tileset7, tileset9, tileset11, tileset13, tileset14, tileset15, tileset16, tileset18,tileset19, tileset20, tileset21, tileset22, tileset23, tileset24, tileset25, tileset26, tileset27, tileset28, tileset33, tileset35, tileset36, tileset38, tileset39, tileset40 ]);  
-  const aboveLayer2 = map6.createLayer('DECORATIONS OVER STREETS', [  tileset1, tileset2, tileset3, tileset4, tileset5, tileset6, tileset7, tileset9, tileset11, tileset13, tileset14, tileset15, tileset16, tileset18,tileset19, tileset20, tileset21, tileset22, tileset23, tileset24, tileset25, tileset26, tileset27, tileset28, tileset33, tileset35, tileset36, tileset38, tileset39, tileset40 ]);  
+  const aboveLayer1 = map6.createLayer('ROOFS OVER STREETS', [  tileset3, tileset5, tileset6, tileset7, tileset9, tileset11, tileset13, tileset15, tileset16, tileset21, tileset23, tileset24, tileset35, tileset36, tileset38 ]);  
+  const aboveLayer2 = map6.createLayer('DECORATIONS OVER STREETS', [  tileset3, tileset5, tileset6, tileset7, tileset9, tileset11, tileset13, tileset15, tileset16, tileset21, tileset23, tileset24, tileset35, tileset36, tileset38 ]);  
 
 
 
