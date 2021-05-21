@@ -98,13 +98,6 @@ create() {
    this.physics.add.collider(player, worldLayer4);
    this.physics.add.collider(player, worldLayer5);
 
- //because there were some walltiles and such in these layers, I made them collide aswell
-//   this.physics.add.collider(player, belowLayer1); 
-//   this.physics.add.collider(player, belowLayer2);
-//   this.physics.add.collider(player, belowLayer3);
-
-//   this.physics.add.collider(player, aboveLayer1); 
-//   this.physics.add.collider(player, aboveLayer2);
 
 // Create the player's walking animations from the texture atlas. These are stored in the global
 // animation manager so any sprite can access them.
