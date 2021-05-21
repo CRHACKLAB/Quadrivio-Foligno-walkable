@@ -70,27 +70,29 @@ create() {
   const belowLayer2 = map6.createLayer('PIAZZE', [  tileset1, tileset2, tileset3, tileset4, tileset5, tileset6, tileset7, tileset9, tileset11, tileset13, tileset14, tileset15, tileset16, tileset18,tileset19, tileset20, tileset21, tileset22, tileset23, tileset24, tileset25, tileset26, tileset27, tileset28, tileset33, tileset35, tileset36, tileset38, tileset39, tileset40 ]); 
   const belowLayer1 = map6.createLayer('SOTTO PIAZZE', [  tileset1, tileset2, tileset3, tileset4, tileset5, tileset6, tileset7, tileset9, tileset11, tileset13, tileset14, tileset15, tileset16, tileset18,tileset19, tileset20, tileset21, tileset22, tileset23, tileset24, tileset25, tileset26, tileset27, tileset28, tileset33, tileset35, tileset36, tileset38, tileset39, tileset40 ]);  
   
-  const UnknownLayer3 = map6.createLayer('SOTTOPALAZZI', [  tileset1, tileset2, tileset3, tileset4, tileset5, tileset6, tileset7, tileset9, tileset11, tileset13, tileset14, tileset15, tileset16, tileset18,tileset19, tileset20, tileset21, tileset22, tileset23, tileset24, tileset25, tileset26, tileset27, tileset28, tileset33, tileset35, tileset36, tileset38, tileset39, tileset40 ]);  
-  const UnknownLayer4 = map6.createLayer('BUILDINGS', [  tileset1, tileset2, tileset3, tileset4, tileset5, tileset6, tileset7, tileset9, tileset11, tileset13, tileset14, tileset15, tileset16, tileset18,tileset19, tileset20, tileset21, tileset22, tileset23, tileset24, tileset25, tileset26, tileset27, tileset28, tileset33, tileset35, tileset36, tileset38, tileset39, tileset40 ]);  
-  const UnknownLayer2 = map6.createLayer('PALAZZI', [  tileset1, tileset2, tileset3, tileset4, tileset5, tileset6, tileset7, tileset9, tileset11, tileset13, tileset14, tileset15, tileset16, tileset18,tileset19, tileset20, tileset21, tileset22, tileset23, tileset24, tileset25, tileset26, tileset27, tileset28, tileset33, tileset35, tileset36, tileset38, tileset39, tileset40 ]); 
-  const UnknownLayer6 = map6.createLayer('DEC.PALAZZI', [  tileset1, tileset2, tileset3, tileset4, tileset5, tileset6, tileset7, tileset9, tileset11, tileset13, tileset14, tileset15, tileset16, tileset18,tileset19, tileset20, tileset21, tileset22, tileset23, tileset24, tileset25, tileset26, tileset27, tileset28, tileset33, tileset35, tileset36, tileset38, tileset39, tileset40 ]);  
-  const UnknownLayer7 = map6.createLayer('SOTTO TETTI', [  tileset1, tileset2, tileset3, tileset4, tileset5, tileset6, tileset7, tileset9, tileset11, tileset13, tileset14, tileset15, tileset16, tileset18,tileset19, tileset20, tileset21, tileset22, tileset23, tileset24, tileset25, tileset26, tileset27, tileset28, tileset33, tileset35, tileset36, tileset38, tileset39, tileset40 ]);  
-  const UnknownLayer8 = map6.createLayer('DECORATIONS', [  tileset1, tileset2, tileset3, tileset4, tileset5, tileset6, tileset7, tileset9, tileset11, tileset13, tileset14, tileset15, tileset16, tileset18,tileset19, tileset20, tileset21, tileset22, tileset23, tileset24, tileset25, tileset26, tileset27, tileset28, tileset33, tileset35, tileset36, tileset38, tileset39, tileset40 ]);  
-  const UnknownLayer9 = map6.createLayer('ROOFS OVER STREETS', [  tileset1, tileset2, tileset3, tileset4, tileset5, tileset6, tileset7, tileset9, tileset11, tileset13, tileset14, tileset15, tileset16, tileset18,tileset19, tileset20, tileset21, tileset22, tileset23, tileset24, tileset25, tileset26, tileset27, tileset28, tileset33, tileset35, tileset36, tileset38, tileset39, tileset40 ]);  
-  const UnknownLayer10 = map6.createLayer('DECORATIONS OVER STREETS', [  tileset1, tileset2, tileset3, tileset4, tileset5, tileset6, tileset7, tileset9, tileset11, tileset13, tileset14, tileset15, tileset16, tileset18,tileset19, tileset20, tileset21, tileset22, tileset23, tileset24, tileset25, tileset26, tileset27, tileset28, tileset33, tileset35, tileset36, tileset38, tileset39, tileset40 ]);  
+  const worldLayer1 = map6.createLayer('SOTTOPALAZZI', [  tileset1, tileset2, tileset3, tileset4, tileset5, tileset6, tileset7, tileset9, tileset11, tileset13, tileset14, tileset15, tileset16, tileset18,tileset19, tileset20, tileset21, tileset22, tileset23, tileset24, tileset25, tileset26, tileset27, tileset28, tileset33, tileset35, tileset36, tileset38, tileset39, tileset40 ]);  
+  const worldLayer2 = map6.createLayer('BUILDINGS', [  tileset1, tileset2, tileset3, tileset4, tileset5, tileset6, tileset7, tileset9, tileset11, tileset13, tileset14, tileset15, tileset16, tileset18,tileset19, tileset20, tileset21, tileset22, tileset23, tileset24, tileset25, tileset26, tileset27, tileset28, tileset33, tileset35, tileset36, tileset38, tileset39, tileset40 ]);  
+  const worldLayer3 = map6.createLayer('PALAZZI', [  tileset1, tileset2, tileset3, tileset4, tileset5, tileset6, tileset7, tileset9, tileset11, tileset13, tileset14, tileset15, tileset16, tileset18,tileset19, tileset20, tileset21, tileset22, tileset23, tileset24, tileset25, tileset26, tileset27, tileset28, tileset33, tileset35, tileset36, tileset38, tileset39, tileset40 ]); 
+  const worldLayer4 = map6.createLayer('DEC.PALAZZI', [  tileset1, tileset2, tileset3, tileset4, tileset5, tileset6, tileset7, tileset9, tileset11, tileset13, tileset14, tileset15, tileset16, tileset18,tileset19, tileset20, tileset21, tileset22, tileset23, tileset24, tileset25, tileset26, tileset27, tileset28, tileset33, tileset35, tileset36, tileset38, tileset39, tileset40 ]);  
+  const worldLayer5 = map6.createLayer('DECORATIONS', [  tileset1, tileset2, tileset3, tileset4, tileset5, tileset6, tileset7, tileset9, tileset11, tileset13, tileset14, tileset15, tileset16, tileset18,tileset19, tileset20, tileset21, tileset22, tileset23, tileset24, tileset25, tileset26, tileset27, tileset28, tileset33, tileset35, tileset36, tileset38, tileset39, tileset40 ]);  
+  
+  const aboveLayer1 = map6.createLayer('ROOFS OVER STREETS', [  tileset1, tileset2, tileset3, tileset4, tileset5, tileset6, tileset7, tileset9, tileset11, tileset13, tileset14, tileset15, tileset16, tileset18,tileset19, tileset20, tileset21, tileset22, tileset23, tileset24, tileset25, tileset26, tileset27, tileset28, tileset33, tileset35, tileset36, tileset38, tileset39, tileset40 ]);  
+  const aboveLayer2 = map6.createLayer('DECORATIONS OVER STREETS', [  tileset1, tileset2, tileset3, tileset4, tileset5, tileset6, tileset7, tileset9, tileset11, tileset13, tileset14, tileset15, tileset16, tileset18,tileset19, tileset20, tileset21, tileset22, tileset23, tileset24, tileset25, tileset26, tileset27, tileset28, tileset33, tileset35, tileset36, tileset38, tileset39, tileset40 ]);  
 
 
 
 
 // inserting how to set the collisions
-//    worldLayer1.setCollisionByProperty({ collides: true });
-//    worldLayer2.setCollisionByProperty({ collides: true });
-//    worldLayer3.setCollisionByProperty({ collides: true });
+    worldLayer1.setCollisionByProperty({ collides: true });
+    worldLayer2.setCollisionByProperty({ collides: true });
+    worldLayer3.setCollisionByProperty({ collides: true });
+    worldLayer4.setCollisionByProperty({ collides: true });
+    worldLayer5.setCollisionByProperty({ collides: true });
 
 // because there were some walltiles and such in these layers, I made them collide aswell
 
-// aboveLayer1.setDepth(10); // is used for setting the dept of a layer, so the person playing it can for example walk underneath it
-// aboveLayer2.setDepth(10);
+ aboveLayer1.setDepth(10); // is used for setting the dept of a layer, so the person playing it can for example walk underneath it
+ aboveLayer2.setDepth(10);
 
 //declaring spawnpoint
   const spawnPoint = map6.findObject("Objects", obj => obj.name === "Spawn Point");
@@ -104,12 +106,14 @@ create() {
   .setSize(30, 40)
   .setOffset(0, 24);
 
-// // Watch the player and worldLayer for collisions, for the duration of the scene:
-//   this.physics.add.collider(player, worldLayer1);
-//   this.physics.add.collider(player, worldLayer2);
-//   this.physics.add.collider(player, worldLayer3);
+ // Watch the player and worldLayer for collisions, for the duration of the scene:
+   this.physics.add.collider(player, worldLayer1);
+   this.physics.add.collider(player, worldLayer2);
+   this.physics.add.collider(player, worldLayer3);
+   this.physics.add.collider(player, worldLayer4);
+   this.physics.add.collider(player, worldLayer5);
 
-// //because there were some walltiles and such in these layers, I made them collide aswell
+ //because there were some walltiles and such in these layers, I made them collide aswell
 //   this.physics.add.collider(player, belowLayer1); 
 //   this.physics.add.collider(player, belowLayer2);
 //   this.physics.add.collider(player, belowLayer3);
