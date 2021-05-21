@@ -51,9 +51,9 @@ create() {
   const tileset38 = map6.addTilesetImage("tetti frontali", "ESTtiles38");
 
 // what tilesets are in which layers
-  const belowLayer3 = map6.createLayer('STRADE', [  tileset3, tileset5, tileset6, tileset7, tileset9, tileset11, tileset13, tileset15, tileset16, tileset21, tileset23, tileset24, tileset35, tileset36, tileset38 ]); 
+  const belowLayer3 = map6.createLayer('SOTTO PIAZZE', [  tileset3, tileset5, tileset6, tileset7, tileset9, tileset11, tileset13, tileset15, tileset16, tileset21, tileset23, tileset24, tileset35, tileset36, tileset38 ]); 
   const belowLayer2 = map6.createLayer('PIAZZE', [  tileset3, tileset5, tileset6, tileset7, tileset9, tileset11, tileset13, tileset15, tileset16, tileset21, tileset23, tileset24, tileset35, tileset36, tileset38 ]); 
-  const belowLayer1 = map6.createLayer('SOTTO PIAZZE', [  tileset3, tileset5, tileset6, tileset7, tileset9, tileset11, tileset13, tileset15, tileset16, tileset21, tileset23, tileset24, tileset35, tileset36, tileset38 ]);  
+  const belowLayer1 = map6.createLayer('STRADE', [  tileset3, tileset5, tileset6, tileset7, tileset9, tileset11, tileset13, tileset15, tileset16, tileset21, tileset23, tileset24, tileset35, tileset36, tileset38 ]);  
   
   const worldLayer1 = map6.createLayer('SOTTOPALAZZI', [  tileset3, tileset5, tileset6, tileset7, tileset9, tileset11, tileset13, tileset15, tileset16, tileset21, tileset23, tileset24, tileset35, tileset36, tileset38 ]);  
   const worldLayer2 = map6.createLayer('BUILDINGS', [  tileset3, tileset5, tileset6, tileset7, tileset9, tileset11, tileset13, tileset15, tileset16, tileset21, tileset23, tileset24, tileset35, tileset36, tileset38 ]);  
