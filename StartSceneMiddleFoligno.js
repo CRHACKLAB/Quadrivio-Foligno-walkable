@@ -25,6 +25,7 @@ init() {
 
 preload() {
   preloadScene;
+  this.load.image("Enrico maestrini", "assets/CHARACTERS/Enrico maestrini.png");
 }
 
 create() {
@@ -54,6 +55,7 @@ create() {
   const tileset20 = startmap.addTilesetImage("STRADE", "tiles20");
   const tileset21 = startmap.addTilesetImage("TETTI1", "tiles21");
   const tileset22 = startmap.addTilesetImage("World_C", "tiles22");
+  const Enrico = startmap.addTilesetImage("Enrico maestrini", "Enrico maestrini");
 
   
 
@@ -61,7 +63,7 @@ create() {
   const belowLayer1 = startmap.createLayer('STREET', [  tileset1, tileset2, tileset3, tileset4, tileset5, tileset6, tileset7, tileset8, tileset9, tileset10, tileset11, tileset12, tileset13, tileset14, tileset15, tileset16, tileset17, tileset18,tileset19, tileset20, tileset21, tileset22 ]); 
   const belowLayer2 = startmap.createLayer('PLAZAS', [  tileset1, tileset2, tileset3, tileset4, tileset5, tileset6, tileset7, tileset8, tileset9, tileset10, tileset11, tileset12, tileset13, tileset14, tileset15, tileset16, tileset17, tileset18,tileset19, tileset20, tileset21, tileset22 ]); 
 
-  const worldLayer1 = startmap.createLayer('BUILDINGS', [  tileset1, tileset2, tileset3, tileset4, tileset5, tileset6, tileset7, tileset8, tileset9, tileset10, tileset11, tileset12, tileset13, tileset14, tileset15, tileset16, tileset17, tileset18,tileset19, tileset20, tileset21, tileset22 ]); 
+  const worldLayer1 = startmap.createLayer('BUILDINGS', [  tileset1, tileset2, tileset3, tileset4, tileset5, tileset6, tileset7, tileset8, tileset9, tileset10, tileset11, tileset12, tileset13, tileset14, tileset15, tileset16, tileset17, tileset18,tileset19, tileset20, tileset21, tileset22, Enrico ]); 
   const worldLayer2 = startmap.createLayer('DETAILS', [  tileset1, tileset2, tileset3, tileset4, tileset5, tileset6, tileset7, tileset8, tileset9, tileset10, tileset11, tileset12, tileset13, tileset14, tileset15, tileset16, tileset17, tileset18,tileset19, tileset20, tileset21, tileset22 ]); 
   const worldLayer3 = startmap.createLayer('DOORS AND WINDOWS', [  tileset1, tileset2, tileset3, tileset4, tileset5, tileset6, tileset7, tileset8, tileset9, tileset11, tileset10, tileset12, tileset13, tileset14, tileset15, tileset16, tileset17, tileset18,tileset19, tileset20, tileset21, tileset22 ]); 
 
