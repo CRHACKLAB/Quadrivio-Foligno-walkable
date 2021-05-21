@@ -52,10 +52,7 @@ create() {
   const tileset16 = map7.addTilesetImage("PORTE45", "ESTtiles16");
   const tileset17 = map7.addTilesetImage("ROOF1", "ESTtiles17");
   const tileset18 = map7.addTilesetImage("ROOF2", "ESTtiles18");
-  const tileset19 = map7.addTilesetImage("SF_Outside_A5", "ESTtiles19");
-  const tileset20 = map7.addTilesetImage("STRADE", "ESTtiles20");
   const tileset21 = map7.addTilesetImage("TETTI1", "ESTtiles21");
-  const tileset22 = map7.addTilesetImage("World_C", "ESTtiles22");
   const tileset23 = map7.addTilesetImage("AIUOLA", "ESTtiles23");
   const tileset24 = map7.addTilesetImage("ALBERI", "ESTtiles24");
   const tileset25 = map7.addTilesetImage("ancient doors", "ESTtiles25");
@@ -64,27 +61,23 @@ create() {
   const tileset28 = map7.addTilesetImage("GLASS DOORS", "ESTtiles28");
   const tileset29 = map7.addTilesetImage("ladders_45degrees", "ESTtiles29");
   const tileset30 = map7.addTilesetImage("METAL GEARS", "ESTtiles30");
-  const tileset33 = map7.addTilesetImage("rosoni piccoli", "ESTtiles33");
-  const tileset34 = map7.addTilesetImage("Statua Garibaldi", "ESTtiles34");
   const tileset35 = map7.addTilesetImage("TETTI BASSI", "ESTtiles35");
   const tileset36 = map7.addTilesetImage("TETTI BASSI 2", "ESTtiles36");
   const tileset37 = map7.addTilesetImage("TETTI COMPLETI", "ESTtiles37");
   const tileset38 = map7.addTilesetImage("tetti frontali", "ESTtiles38");
-  const tileset39 = map7.addTilesetImage("VARIE", "OVESTtiles39");
-  const tileset40 = map7.addTilesetImage("roofs1", "OVESTtiles40");
 
 // what tilesets are in which layers
-  const belowLayer3 = map7.createLayer('STRADE', [  tileset1, tileset2, tileset3, tileset4, tileset5, tileset6, tileset7, tileset8, tileset9, tileset10, tileset11, tileset12, tileset13, tileset14, tileset15, tileset16, tileset17, tileset18,tileset19, tileset20, tileset21, tileset22, tileset23, tileset24, tileset25, tileset26, tileset27, tileset28, tileset29, tileset30, tileset33, tileset34, tileset35, tileset36, tileset37, tileset38, tileset39, tileset40 ]); 
-  const belowLayer2 = map7.createLayer('PIAZZE', [  tileset1, tileset2, tileset3, tileset4, tileset5, tileset6, tileset7, tileset8, tileset9, tileset10, tileset11, tileset12, tileset13, tileset14, tileset15, tileset16, tileset17, tileset18,tileset19, tileset20, tileset21, tileset22, tileset23, tileset24, tileset25, tileset26, tileset27, tileset28, tileset29, tileset30, tileset33, tileset34, tileset35, tileset36, tileset37, tileset38, tileset39, tileset40  ]); 
-  const belowLayer1 = map7.createLayer('SOPRA PIAZZE', [  tileset1, tileset2, tileset3, tileset4, tileset5, tileset6, tileset7, tileset8, tileset9, tileset10, tileset11, tileset12, tileset13, tileset14, tileset15, tileset16, tileset17, tileset18,tileset19, tileset20, tileset21, tileset22, tileset23, tileset24, tileset25, tileset26, tileset27, tileset28, tileset29, tileset30, tileset33, tileset34, tileset35, tileset36, tileset37, tileset38, tileset39, tileset40  ]); 
+  const belowLayer3 = map7.createLayer('STRADE', [  tileset1, tileset2, tileset3, tileset4, tileset5, tileset6, tileset7, tileset8, tileset9, tileset10, tileset11, tileset12, tileset13, tileset14, tileset15, tileset16, tileset17, tileset18, tileset21, tileset23, tileset24, tileset25, tileset26, tileset27, tileset28, tileset29, tileset30, tileset35, tileset36, tileset37, tileset38 ]); 
+  const belowLayer2 = map7.createLayer('PIAZZE', [  tileset1, tileset2, tileset3, tileset4, tileset5, tileset6, tileset7, tileset8, tileset9, tileset10, tileset11, tileset12, tileset13, tileset14, tileset15, tileset16, tileset17, tileset18, tileset21, tileset23, tileset24, tileset25, tileset26, tileset27, tileset28, tileset29, tileset30, tileset35, tileset36, tileset37, tileset38 ]);  
+  const belowLayer1 = map7.createLayer('SOPRA PIAZZE', [  tileset1, tileset2, tileset3, tileset4, tileset5, tileset6, tileset7, tileset8, tileset9, tileset10, tileset11, tileset12, tileset13, tileset14, tileset15, tileset16, tileset17, tileset18, tileset21, tileset23, tileset24, tileset25, tileset26, tileset27, tileset28, tileset29, tileset30, tileset35, tileset36, tileset37, tileset38 ]); 
   
-  const worldLayer1 = map7.createLayer('SOTTO PALAZZI', [  tileset1, tileset2, tileset3, tileset4, tileset5, tileset6, tileset7, tileset8, tileset9, tileset10, tileset11, tileset12, tileset13, tileset14, tileset15, tileset16, tileset17, tileset18,tileset19, tileset20, tileset21, tileset22, tileset23, tileset24, tileset25, tileset26, tileset27, tileset28, tileset29, tileset30, tileset33, tileset34, tileset35, tileset36, tileset37, tileset38, tileset39, tileset40 ]); 
-  const worldLayer2 = map7.createLayer('BUILDINGS', [  tileset1, tileset2, tileset3, tileset4, tileset5, tileset6, tileset7, tileset8, tileset9, tileset10, tileset11, tileset12, tileset13, tileset14, tileset15, tileset16, tileset17, tileset18,tileset19, tileset20, tileset21, tileset22, tileset23, tileset24, tileset25, tileset26, tileset27, tileset28, tileset29, tileset30, tileset33, tileset34, tileset35, tileset36, tileset37, tileset38, tileset39, tileset40 ]); 
-  const worldLayer3 = map7.createLayer('BUILDINGS 2', [  tileset1, tileset2, tileset3, tileset4, tileset5, tileset6, tileset7, tileset8, tileset9, tileset10, tileset11, tileset12, tileset13, tileset14, tileset15, tileset16, tileset17, tileset18,tileset19, tileset20, tileset21, tileset22, tileset23, tileset24, tileset25, tileset26, tileset27, tileset28, tileset29, tileset30, tileset33, tileset34, tileset35, tileset36, tileset37, tileset38, tileset39, tileset40 ]); 
-  const worldLayer4 = map7.createLayer('DEC.PALAZZI', [  tileset1, tileset2, tileset3, tileset4, tileset5, tileset6, tileset7, tileset8, tileset9, tileset10, tileset11, tileset12, tileset13, tileset14, tileset15, tileset16, tileset17, tileset18,tileset19, tileset20, tileset21, tileset22, tileset23, tileset24, tileset25, tileset26, tileset27, tileset28, tileset29, tileset30, tileset33, tileset34, tileset35, tileset36, tileset37, tileset38, tileset39, tileset40 ]); 
-  const worldLayer5 = map7.createLayer('decorazioni', [  tileset1, tileset2, tileset3, tileset4, tileset5, tileset6, tileset7, tileset8, tileset9, tileset10, tileset11, tileset12, tileset13, tileset14, tileset15, tileset16, tileset17, tileset18,tileset19, tileset20, tileset21, tileset22, tileset23, tileset24, tileset25, tileset26, tileset27, tileset28, tileset29, tileset30, tileset33, tileset34, tileset35, tileset36, tileset37, tileset38, tileset39, tileset40 ]); 
+  const worldLayer1 = map7.createLayer('SOTTO PALAZZI', [  tileset1, tileset2, tileset3, tileset4, tileset5, tileset6, tileset7, tileset8, tileset9, tileset10, tileset11, tileset12, tileset13, tileset14, tileset15, tileset16, tileset17, tileset18, tileset21, tileset23, tileset24, tileset25, tileset26, tileset27, tileset28, tileset29, tileset30, tileset35, tileset36, tileset37, tileset38 ]); 
+  const worldLayer2 = map7.createLayer('BUILDINGS', [  tileset1, tileset2, tileset3, tileset4, tileset5, tileset6, tileset7, tileset8, tileset9, tileset10, tileset11, tileset12, tileset13, tileset14, tileset15, tileset16, tileset17, tileset18, tileset21, tileset23, tileset24, tileset25, tileset26, tileset27, tileset28, tileset29, tileset30, tileset35, tileset36, tileset37, tileset38 ]); 
+  const worldLayer3 = map7.createLayer('BUILDINGS 2', [  tileset1, tileset2, tileset3, tileset4, tileset5, tileset6, tileset7, tileset8, tileset9, tileset10, tileset11, tileset12, tileset13, tileset14, tileset15, tileset16, tileset17, tileset18, tileset21, tileset23, tileset24, tileset25, tileset26, tileset27, tileset28, tileset29, tileset30, tileset35, tileset36, tileset37, tileset38 ]); 
+  const worldLayer4 = map7.createLayer('DEC.PALAZZI', [  tileset1, tileset2, tileset3, tileset4, tileset5, tileset6, tileset7, tileset8, tileset9, tileset10, tileset11, tileset12, tileset13, tileset14, tileset15, tileset16, tileset17, tileset18, tileset21, tileset23, tileset24, tileset25, tileset26, tileset27, tileset28, tileset29, tileset30, tileset35, tileset36, tileset37, tileset38 ]); 
+  const worldLayer5 = map7.createLayer('decorazioni', [  tileset1, tileset2, tileset3, tileset4, tileset5, tileset6, tileset7, tileset8, tileset9, tileset10, tileset11, tileset12, tileset13, tileset14, tileset15, tileset16, tileset17, tileset18, tileset21, tileset23, tileset24, tileset25, tileset26, tileset27, tileset28, tileset29, tileset30, tileset35, tileset36, tileset37, tileset38 ]); 
   
-  const aboveLayer1 = map7.createLayer('ROOFS OVER STREETS', [  tileset1, tileset2, tileset3, tileset4, tileset5, tileset6, tileset7, tileset8, tileset9, tileset10, tileset11, tileset12, tileset13, tileset14, tileset15, tileset16, tileset17, tileset18,tileset19, tileset20, tileset21, tileset22, tileset23, tileset24, tileset25, tileset26, tileset27, tileset28, tileset29, tileset30, tileset33, tileset34, tileset35, tileset36, tileset37, tileset38, tileset39, tileset40 ]); 
+  const aboveLayer1 = map7.createLayer('ROOFS OVER STREETS', [  tileset1, tileset2, tileset3, tileset4, tileset5, tileset6, tileset7, tileset8, tileset9, tileset10, tileset11, tileset12, tileset13, tileset14, tileset15, tileset16, tileset17, tileset18, tileset21, tileset23, tileset24, tileset25, tileset26, tileset27, tileset28, tileset29, tileset30, tileset35, tileset36, tileset37, tileset38 ]); 
 
 // inserting how to set the collisions
     worldLayer1.setCollisionByProperty({ collides: true });
