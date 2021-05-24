@@ -259,10 +259,6 @@ update(time, delta) {
   talkStuff() {
     this.scene.start('dialogue');
   }
-
-  coordinates() {
-    console.log("X-as: "+player.x+" Y-as: "+player.y+".");
-  }
 }
 
 export default SceneMiddleFoligno;

@@ -220,6 +220,10 @@ update(time, delta) {
       this.goEast();
     }
 
+    if(player.y>maximumY){
+      this.goSouth();
+    }
+
   // If we were moving, pick and idle frame to use
     if (prevVelocity.x < 0) player.setTexture("BAsprites", "left002");
     else if (prevVelocity.x > 0) player.setTexture("BAsprites", "right002");
@@ -234,6 +238,9 @@ update(time, delta) {
 
   goEast() {
     this.scene.start('sceneMiddleFoligno', { xpixel: 35, ypixel:player.y });
+  }
+  goSouth() {
+    this.scene.start('sceneSouthWestFoligno', { xpixel: player.x, ypixel:25 });
   }
 }
 
