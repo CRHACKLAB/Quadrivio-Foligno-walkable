@@ -213,6 +213,10 @@ update(time, delta) {
   } else {
     player.anims.stop();
 
+    if(player.x<minimumX){
+      this.goWest();
+    }
+
   // If we were moving, pick and idle frame to use
     if (prevVelocity.x < 0) player.setTexture("BAsprites", "left002");
     else if (prevVelocity.x > 0) player.setTexture("BAsprites", "right002");
@@ -224,6 +228,10 @@ update(time, delta) {
   end() {
       
   }
+
+goWest() {
+    this.scene.start('sceneSouthFoligno', { xpixel: 9800, ypixel:player.y });
+    }
 }
 
 export default SceneSouthEastFoligno;

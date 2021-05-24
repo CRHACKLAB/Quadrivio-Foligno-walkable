@@ -218,7 +218,6 @@ update(time, delta) {
 
     if(player.x>maximumX){
       this.goEast();
-      console.log(player.x);
     }
 
   // If we were moving, pick and idle frame to use
