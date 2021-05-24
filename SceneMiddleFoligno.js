@@ -223,6 +223,8 @@ update(time, delta) {
       this.input.keyboard.once('keydown-S', () => this.talkStuff());
     }
 
+    this.input.keyboard.once('keydown-D', () => this.coordinates());
+
 // If we were moving, pick and idle frame to use
     if (prevVelocity.x < 0) player.setTexture("BAsprites", "left002");
     else if (prevVelocity.x > 0) player.setTexture("BAsprites", "right002");
@@ -248,6 +250,10 @@ update(time, delta) {
 
   talkStuff() {
     this.scene.start('dialogue');
+  }
+
+  coordinates() {
+    console.log("X-as: "+player.x+" Y-as: "+player.y+".");
   }
 }
 
