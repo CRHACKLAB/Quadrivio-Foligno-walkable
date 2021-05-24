@@ -21,8 +21,8 @@
    }
 
 init(data) {
-  //this.xpixel = data.xpixel;
-  //this.ypixel = data.ypixel;
+  this.xpixel = data.xpixel;
+  this.ypixel = data.ypixel;
    };
 
 preload() {
@@ -87,8 +87,8 @@ create() {
 
 //declaring spawnpoint
   const spawnPoint = map5.findObject("Objects", obj => obj.name === "Spawn Point");
-  //spawnPoint.x=this.xpixel;
-  //spawnPoint.y=this.ypixel;
+  spawnPoint.x=this.xpixel;
+  spawnPoint.y=this.ypixel;
   
 // Create a sprite with physics enabled via the physics system. The image used for the sprite has
 // a bit of whitespace, so I'm using setSize & setOffset to control the size of the player's body.

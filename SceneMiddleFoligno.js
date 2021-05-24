@@ -8,7 +8,7 @@ let cursors;
 let player;
 let maximumX=9800;
 let minimumX=20;
-let maximumY=6800;
+let maximumY=7400;
 let minimumY=2;
 
 var preloadScene = new PreloadScene();
@@ -219,6 +219,10 @@ update(time, delta) {
       this.goNord();
     }
 
+    if(player.y>maximumY){
+      this.goSouth();
+    }
+
     if(player.x>=7200 && player.x<=7245 && player.y>=1918 && player.y<=1925){
       this.input.keyboard.once('keydown-S', () => this.talkStuff());
     }
@@ -246,6 +250,10 @@ update(time, delta) {
 
   goNord() {
     this.scene.start('sceneNordFoligno', { xpixel: player.x, ypixel:7440 });
+  }
+
+  goSouth() {
+    this.scene.start('sceneSouthFoligno', { xpixel: player.x, ypixel:25 });
   }
 
   talkStuff() {
