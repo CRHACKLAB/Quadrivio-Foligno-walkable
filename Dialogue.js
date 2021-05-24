@@ -44,7 +44,7 @@ rect1.alpha = 0.5;
   .setDepth(30)
   .setWordWrapWidth(400);
 
-  this.typewriteTextWrapped('Hello, World! Hello, World! Hello, World! Hello, World! Hello, World!')
+  this.typewriteTextWrapped('Hello, World! Hello, World! Hello, World! Hello, x World! Hello, World!')
 
 }
 
