@@ -22860,7 +22860,7 @@
 </data>
  </layer>
  <objectgroup id="12" name="Objects">
-  <object id="3" name="Spawn Point" x="7121.18" y="1953.78">
+  <object id="3" name="Spawn Point" x="7029.18" y="7465.78">
    <point/>
   </object>
  </objectgroup>
