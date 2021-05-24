@@ -42,7 +42,7 @@ rect1.alpha = 0.5;
   })
   .setScrollFactor(0)
   .setDepth(30)
-  .setWordWrapWidth(500);
+  .setWordWrapWidth(520);
 
   this.typewriteTextWrapped('Hello, World! Hello, World! Hello, World! Hello, x World! Hello, World!')
 
