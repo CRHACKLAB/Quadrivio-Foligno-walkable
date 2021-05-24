@@ -8,7 +8,7 @@ let cursors;
 let player;
 let maximumX=9800;
 let minimumX=20;
-let maximumY=7400;
+let maximumY=7440;
 let minimumY=2;
 
 var preloadScene = new PreloadScene();
