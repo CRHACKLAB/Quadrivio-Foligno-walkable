@@ -41,12 +41,10 @@ rect1.alpha = 0.5;
     fill: "#ffffff"
   })
   .setScrollFactor(0)
-  .setDepth(30);
+  .setDepth(30)
+  .setWordWrapWidth(100);
 
-  this.typewriteText("Hello there, I am Aaron's creation.");
-  this.typewriteText("Hello there, I am Aaron's creation.");
-
-
+  this.typewriteTextWrapped('Hello, World! Hello, World! Hello, World! Hello, World! Hello, World!')
 
 }
 
@@ -62,6 +60,14 @@ typewriteText(text)
 		repeat: length - 1,
 		delay: 50
 	})
+}
+
+typewriteTextWrapped(text)
+{
+	const lines = this.label.getWrappedText(text)
+	const wrappedText = lines.join('\n')
+
+	this.typewriteText(wrappedText)
 }
 
 }
