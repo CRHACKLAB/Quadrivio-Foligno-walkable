@@ -44,6 +44,9 @@ rect1.alpha = 0.5;
   .setDepth(30);
 
   this.typewriteText("Hello there, I am Aaron's creation.");
+  this.typewriteText("Hello there, I am Aaron's creation.");
+
+
 
 }
 
