@@ -1,16 +1,16 @@
-/**
- * Author: Michael Hadley, mikewesthad.com
- * Althered by : Aaron Sprangers
+/*
+ Author : Aaron Sprangers
+
+ 
  */
 
  import PreloadScene from './preloadScene.js';
 
  let cursors;
  let player;
- let maximumX=9800;
- let minimumX=20;
- let maximumY;
- let minimumY;
+ let maximumX=9800;//coördinates where the player jumps to the map left of this map
+ let maximumY=7440;//coördinates where the player jumps to the map below this map
+ let minimumY=2; //coördinates where the player jumps to the map above this map
 
  var preloadScene = new PreloadScene();
  
@@ -20,20 +20,20 @@
      super({key : 'sceneWestFoligno'});    
    }
 
-init(data) {
+init(data) { //to make sure the player arrives at the right coördinates when switching maps
   this.xpixel = data.xpixel;
   this.ypixel = data.ypixel;
    };
 
-preload() {
+preload() { //loads all the preloads from the preloadscene into this preload which enables smooth connection between the maps
   preloadScene;
 }
 
 create() {
-//creating the map
+//creating the map with data from preloadscene
   const map3 = this.make.tilemap({ key: "map3" });
 
-//problem with 1 house in West
+//creates all tilesets with data from preloadscene
   const tileset1 = map3.addTilesetImage("45 GRADI", "ESTtiles1");
   const tileset2 = map3.addTilesetImage("castle1", "ESTtiles2");
   const tileset3 = map3.addTilesetImage("castle45GRADI", "ESTtiles3");
@@ -91,6 +91,7 @@ create() {
    worldLayer2.setCollisionByProperty({ collides: true });
    worldLayer3.setCollisionByProperty({ collides: true });
 
+// sets depth of the layers that should appear above the player
    aboveLayer1.setDepth(10); 
    aboveLayer2.setDepth(10); 
 
@@ -160,7 +161,7 @@ create() {
     repeat: -1
   });
 
-  this.add
+  this.add // text for making sure on what part of the map you are
   .text(16, 16, 'Foligno West', {
     font: "18px monospace",
     fill: "#000000",
@@ -174,10 +175,10 @@ create() {
   camera.startFollow(player); //camera follows let player
   camera.setBounds(0, 0, map3.widthInPixels, map3.heightInPixels); //camerasize is mapsize (of gameconfig.)
 
-  cursors = this.input.keyboard.createCursorKeys();
+  cursors = this.input.keyboard.createCursorKeys(); // moving with arrow keys
 
   this.physics.world.setBounds(0, 0, map3.widthInPixels, map3.heightInPixels, true, true, true, true);
-  player.body.collideWorldBounds=true;
+  player.body.collideWorldBounds=true; //giving borders to each map
 }
 
 update(time, delta) {
@@ -224,6 +225,10 @@ update(time, delta) {
       this.goSouth();
     }
 
+    if(player.y<minimumY){
+      this.goNorth();
+    }
+
   // If we were moving, pick and idle frame to use
     if (prevVelocity.x < 0) player.setTexture("BAsprites", "left002");
     else if (prevVelocity.x > 0) player.setTexture("BAsprites", "right002");
@@ -236,12 +241,16 @@ update(time, delta) {
       
   }
 
-  goEast() {
+  goEast() {// jumps the player to other map
     this.scene.start('sceneMiddleFoligno', { xpixel: 35, ypixel:player.y });
   }
-  goSouth() {
+  goSouth() {// jumps the player to other map
     this.scene.start('sceneSouthWestFoligno', { xpixel: player.x, ypixel:25 });
   }
+  goNorth() {// jumps the player to other map
+
+  }
+ 
 }
 
 export default SceneWestFoligno;
