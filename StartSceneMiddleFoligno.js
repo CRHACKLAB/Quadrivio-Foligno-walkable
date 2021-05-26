@@ -8,7 +8,7 @@ let cursors;
 let player;
 let maximumX=9800;//coördinates where the player jumps to the map right of this map
 let minimumX=20;//coördinates where the player jumps to the map left of this map
-let maximumY=7440;//coördinates where the player jumps to the map below this map
+let maximumY=7460;//coördinates where the player jumps to the map below this map
 let minimumY=2; //coördinates where the player jumps to the map above this map
 
 var preloadScene = new PreloadScene();
@@ -221,8 +221,6 @@ update(time, delta) {
       this.input.keyboard.once('keydown-S', () => this.talkStuff());
     }
 
-    this.input.keyboard.once('keydown-D', () => this.talkStuff2());
-
 // If we were moving, pick and idle frame to use
     if (prevVelocity.x < 0) player.setTexture("BAsprites", "left002");
     else if (prevVelocity.x > 0) player.setTexture("BAsprites", "right002");
@@ -255,11 +253,6 @@ goSouth() {// starts the dialogue scene
   talkStuff() {// starts the dialogue scene
     this.scene.start('dialogue');
   }
-
-  talkStuff2() {// starts the dialogue scene
-    console.log("yas is "+player.y+"");
-  }
-
 
 }
 

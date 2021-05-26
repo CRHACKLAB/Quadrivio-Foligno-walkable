@@ -7,7 +7,7 @@
  let cursors;
  let player;
  let maximumX=9800;//coördinates where the player jumps to the map right of this map
- let maximumY=7440;//coördinates where the player jumps to the map below this map
+ let maximumY=7460;//coördinates where the player jumps to the map below this map
  let minimumY=2; //coördinates where the player jumps to the map above this map
 
  var preloadScene = new PreloadScene();
