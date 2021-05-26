@@ -6,10 +6,10 @@ Author: Aaron Sprangers
 
 let cursors;
 let player;
-let maximumX=9800;
-let minimumX=20;
-let maximumY=7440;
-let minimumY=2;
+let maximumX=9800;//coördinates where the player jumps to the map left of this map
+let minimumX=20;//coördinates where the player jumps to the map right of this map
+let maximumY=7440;//coördinates where the player jumps to the map below this map
+let minimumY=2; //coördinates where the player jumps to the map above this map
 
 var preloadScene = new PreloadScene();
 
@@ -32,7 +32,7 @@ create() {
 //creating the map
   const startmap = this.make.tilemap({ key: "startmap" });
 
-//uploading all the .png-files used for making the tilesets
+//uploading all the .png-files from preloadScene used for making the tilesets
   const tileset1 = startmap.addTilesetImage("45 GRADI", "tiles1");
   const tileset2 = startmap.addTilesetImage("castle1", "tiles2");
   const tileset3 = startmap.addTilesetImage("castle45GRADI", "tiles3");
@@ -74,7 +74,8 @@ create() {
   worldLayer2.setCollisionByProperty({ collides: true });
   worldLayer3.setCollisionByProperty({ collides: true });
 
-aboveLayer1.setDepth(10); // is used for setting the dept of a layer, so the person playing it can for example walk underneath it
+  // is used for setting the dept of a layer, so the person playing it can for example walk underneath it
+aboveLayer1.setDepth(10);
 aboveLayer2.setDepth(10);
 
 //declaring spawnpoint
@@ -140,7 +141,7 @@ aboveLayer2.setDepth(10);
     repeat: -1
   });
 
-  this.add
+  this.add // text tells you in what part of the map you are
   .text(16, 16, 'Foligno Middle', {
     font: "18px monospace",
     fill: "#000000",
@@ -154,15 +155,17 @@ aboveLayer2.setDepth(10);
   camera.startFollow(player); //camera follows let player
   camera.setBounds(0, 0, startmap.widthInPixels, startmap.heightInPixels); //camerasize is mapsize (of gameconfig.)
 
+  //enables arrow keys to make you walk around on the map
   cursors = this.input.keyboard.createCursorKeys();
 
+  // sets boundries to the map
   this.physics.world.setBounds(0, 0, startmap.widthInPixels, startmap.heightInPixels, true, true, true, true);
   player.body.collideWorldBounds=true;
 
 }
 
 update(time, delta) {
-  const speed = 375;
+  const speed = 375; //speed of the player
   const prevVelocity = player.body.velocity.clone();
 
 // Stop any previous movement from the last frame
@@ -217,8 +220,6 @@ update(time, delta) {
       this.input.keyboard.once('keydown-S', () => this.talkStuff());
     }
 
-    this.input.keyboard.once('keydown-D', () => this.coordinates());
-
 // If we were moving, pick and idle frame to use
     if (prevVelocity.x < 0) player.setTexture("BAsprites", "left002");
     else if (prevVelocity.x > 0) player.setTexture("BAsprites", "right002");
@@ -232,23 +233,23 @@ end() {
 		
   }
 
-goEast() {
+goEast() {// starts the dialogue scene
     this.scene.start('sceneEastFoligno', { xpixel: 35, ypixel:player.y });
   }
 
-goWest() {
+goWest() {// starts the dialogue scene
     this.scene.start('sceneWestFoligno', { xpixel: 9800, ypixel:player.y });
   }
 
-goNord() {
+goNord() {// starts the dialogue scene
     this.scene.start('sceneNordFoligno', { xpixel: player.x, ypixel:7440 });
   }
 
-goSouth() {
+goSouth() {// starts the dialogue scene
     this.scene.start('sceneSouthFoligno', { xpixel: player.x, ypixel:25 });
   }
 
-  talkStuff() {
+  talkStuff() {// starts the dialogue scene
     this.scene.start('dialogue');
   }
 

@@ -1,7 +1,5 @@
 /*
  Author : Aaron Sprangers
-
- 
  */
 
  import PreloadScene from './preloadScene.js';

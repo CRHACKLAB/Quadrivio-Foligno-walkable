@@ -6,10 +6,10 @@ import PreloadScene from './preloadScene.js';
 
 let cursors;
 let player;
-let maximumX=9800;
-let minimumX=20;
-let maximumY=7440;
-let minimumY=2;
+let maximumX=9800;//coördinates where the player jumps to the map left of this map
+let minimumX=20;//coördinates where the player jumps to the map right of this map
+let maximumY=7440;//coördinates where the player jumps to the map below this map
+let minimumY=2; //coördinates where the player jumps to the map above this map
 
 var preloadScene = new PreloadScene();
 
@@ -36,7 +36,7 @@ create() {
 //creating the map
   const startmap = this.make.tilemap({ key: "startmap" });
 
-//uploading all the .png-files used for making the tilesets
+//uploading all the .png-files from preloadScene used for making the tilesets
   const tileset1 = startmap.addTilesetImage("45 GRADI", "tiles1");
   const tileset2 = startmap.addTilesetImage("castle1", "tiles2");
   const tileset3 = startmap.addTilesetImage("castle45GRADI", "tiles3");
@@ -77,8 +77,10 @@ worldLayer1.setCollisionByProperty({ collides: true });
 worldLayer2.setCollisionByProperty({ collides: true });
 worldLayer3.setCollisionByProperty({ collides: true });
 
-aboveLayer1.setDepth(10); // is used for setting the dept of a layer, so the person playing it can for example walk underneath it
+// is used for setting the dept of a layer, so the person playing it can for example walk underneath it
+aboveLayer1.setDepth(10); 
 aboveLayer2.setDepth(10);
+
 //declaring spawnpoint
   const spawnPoint = startmap.findObject("Objects", obj => obj.name === "Spawn Point");
     spawnPoint.x=this.xpixel;
@@ -95,13 +97,6 @@ aboveLayer2.setDepth(10);
   this.physics.add.collider(player, worldLayer1);
   this.physics.add.collider(player, worldLayer2);
   this.physics.add.collider(player, worldLayer3);
-
-//because there were some walltiles and such in these layers, I made them collide aswell
-  this.physics.add.collider(player, belowLayer1); 
-  this.physics.add.collider(player, belowLayer2);
-
-  this.physics.add.collider(player, aboveLayer1); 
-  this.physics.add.collider(player, aboveLayer2);
 
 // Create the player's walking animations from the texture atlas. These are stored in the global
 // animation manager so any sprite can access them.
@@ -161,18 +156,19 @@ aboveLayer2.setDepth(10);
   .setScrollFactor(0)
   .setDepth(30);
 
-  const camera = this.cameras.main;
+  const camera = this.cameras.main; //declaring camera
   camera.startFollow(player); //camera follows let player
   camera.setBounds(0, 0, startmap.widthInPixels, startmap.heightInPixels); //camerasize is mapsize (of gameconfig.)
 
-  cursors = this.input.keyboard.createCursorKeys();
+  cursors = this.input.keyboard.createCursorKeys(); //makes sure you can use arrow keys to walk around on the maps
 
+  //sets the boundries of the maps, so that you can't go out of the maps
   this.physics.world.setBounds(0, 0, startmap.widthInPixels, startmap.heightInPixels, true, true, true, true);
   player.body.collideWorldBounds=true;
 }
 
 update(time, delta) {
-  const speed = 375;
+  const speed = 375; // speed of the player
   const prevVelocity = player.body.velocity.clone();
 
 // Stop any previous movement from the last frame
@@ -240,23 +236,23 @@ update(time, delta) {
   end() {		
   }
 
-  goEast() {
+  goEast() {// jumps the player to other map
     this.scene.start('sceneEastFoligno', { xpixel: 35, ypixel:player.y });
   }
 
-  goWest() {
+  goWest() {// jumps the player to other map
     this.scene.start('sceneWestFoligno', { xpixel: 9800, ypixel:player.y });
   }
 
-  goNord() {
+  goNord() {// jumps the player to other map
     this.scene.start('sceneNordFoligno', { xpixel: player.x, ypixel:7440 });
   }
 
-  goSouth() {
+  goSouth() {// jumps the player to other map
     this.scene.start('sceneSouthFoligno', { xpixel: player.x, ypixel:25 });
   }
 
-  talkStuff() {
+  talkStuff() {// starts the dialogue scene
     this.scene.start('dialogue');
   }
 }
