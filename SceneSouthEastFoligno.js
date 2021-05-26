@@ -1,16 +1,13 @@
-/**
- * Author: Michael Hadley, mikewesthad.com
- * Althered by : Aaron Sprangers
+/*
+Author : Aaron Sprangers
  */
 
  import PreloadScene from './preloadScene.js';
 
  let cursors;
  let player;
- let maximumX=9800;
- let minimumX=20;
- let maximumY=7460;
- let minimumY=5;
+ let minimumX=20;//coördinates where the player jumps to the map left of this map
+ let minimumY=2; //coördinates where the player jumps to the map above this map
 
  var preloadScene = new PreloadScene();
  
@@ -20,12 +17,12 @@
      super({key : 'sceneSouthEastFoligno'});    
    }
 
-init(data) {
+init(data) {//to make sure the player arrives at the right coördinates when switching maps
   this.xpixel = data.xpixel;
   this.ypixel = data.ypixel;
    };
 
-preload() {
+preload() {//to make sure the player arrives at the right coördinates when switching maps
   preloadScene;
 }
 
@@ -171,8 +168,10 @@ create() {
   camera.startFollow(player); //camera follows let player
   camera.setBounds(0, 0, map7.widthInPixels, map7.heightInPixels); //camerasize is mapsize (of gameconfig.)
 
+  // to make the player able to walk around on the map using the arrow keys
   cursors = this.input.keyboard.createCursorKeys();
 
+  // making bountries at the edge of the map
   this.physics.world.setBounds(0, 0, map7.widthInPixels, map7.heightInPixels, true, true, true, true);
   player.body.collideWorldBounds=true;
 }
@@ -233,11 +232,11 @@ update(time, delta) {
       
   }
 
-goWest() {
+goWest() {// jumps the player to other map
     this.scene.start('sceneSouthFoligno', { xpixel: 9800, ypixel:player.y });
     }
 
-goNord() {
+goNord() {// jumps the player to other map
     this.scene.start('sceneEastFoligno', { xpixel: player.x, ypixel:7430 });
     }
 }

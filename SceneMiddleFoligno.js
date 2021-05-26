@@ -6,8 +6,8 @@ import PreloadScene from './preloadScene.js';
 
 let cursors;
 let player;
-let maximumX=9800;//coördinates where the player jumps to the map left of this map
-let minimumX=20;//coördinates where the player jumps to the map right of this map
+let maximumX=9800;//coördinates where the player jumps to the map right of this map
+let minimumX=20;//coördinates where the player jumps to the map left of this map
 let maximumY=7440;//coördinates where the player jumps to the map below this map
 let minimumY=2; //coördinates where the player jumps to the map above this map
 
@@ -21,12 +21,13 @@ class SceneMiddleFoligno extends Phaser.Scene {
 	}
     
 
-	init(data) {
+	init(data) {//to make sure the player arrives at the right coördinates when switching maps
       this.xpixel = data.xpixel;
       this.ypixel = data.ypixel;
 	};
 
-  preload() { 
+  preload() { //to make sure the player arrives at the right coördinates when switching maps
+      // + the extra load for the character you can talk to
     preloadScene;
     this.load.image("Enrico maestrini", "assets/CHARACTERS/Enrico maestrini.png");
   }

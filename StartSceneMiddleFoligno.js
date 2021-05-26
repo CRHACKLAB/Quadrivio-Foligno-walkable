@@ -6,8 +6,8 @@ Author: Aaron Sprangers
 
 let cursors;
 let player;
-let maximumX=9800;//coördinates where the player jumps to the map left of this map
-let minimumX=20;//coördinates where the player jumps to the map right of this map
+let maximumX=9800;//coördinates where the player jumps to the map right of this map
+let minimumX=20;//coördinates where the player jumps to the map left of this map
 let maximumY=7440;//coördinates where the player jumps to the map below this map
 let minimumY=2; //coördinates where the player jumps to the map above this map
 
@@ -23,7 +23,8 @@ init() {
 
 };
 
-preload() {
+preload() {//loads all the preloads from the preloadscene into this preload which enables smooth connection between the maps
+  // + the extra load for the character you can talk to
   preloadScene;
   this.load.image("Enrico maestrini", "assets/CHARACTERS/Enrico maestrini.png");
 }

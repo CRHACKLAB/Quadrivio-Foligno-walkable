@@ -5,10 +5,9 @@ Author: Aaron Sprangers
 
  let cursors;
  let player;
- let maximumX=9800;
- let minimumX=20;
- let maximumY;
- let minimumY;
+ let minimumX=20;//coördinates where the player jumps to the map left of this map
+ let maximumY=7440;//coördinates where the player jumps to the map below this map
+ let minimumY=2; //coördinates where the player jumps to the map above this map
 
  var preloadScene = new PreloadScene();
  
@@ -18,12 +17,12 @@ constructor() {
      super({key : 'sceneEastFoligno'}); 
   }
 
-init(data) {
+init(data) {//to make sure the player arrives at the right coördinates when switching maps
     this.xpixel = data.xpixel;
     this.ypixel = data.ypixel;
    };
 
-preload() { //normally finished
+preload() { //loads all the preloads from the preloadscene into this preload which enables smooth connection between the maps
     preloadScene;
   }
 
@@ -31,7 +30,7 @@ create() {
 //creating the map
   const map2 = this.make.tilemap({ key: "map2" });
 
-//uploading all the .png-files used for making the tilesets !! I'm hereeeeee
+//uploading all the .png-files from preloadScene used for making the tilesets
   const tileset1 = map2.addTilesetImage("45 GRADI", "ESTtiles1");
   const tileset2 = map2.addTilesetImage("castle1", "ESTtiles2");
   const tileset3 = map2.addTilesetImage("castle45GRADI", "ESTtiles3");
@@ -88,10 +87,10 @@ create() {
    worldLayer2.setCollisionByProperty({ collides: true });
    worldLayer3.setCollisionByProperty({ collides: true });
 
-
-aboveLayer1.setDepth(10); //is used for setting the dept of a layer, so the person playing it can for example walk underneath it
-aboveLayer2.setDepth(10);
-aboveLayer3.setDepth(10);
+//is used for setting the dept of a layer, so the person playing it can for example walk underneath it
+  aboveLayer1.setDepth(10);
+  aboveLayer2.setDepth(10);
+  aboveLayer3.setDepth(10);
 
 //declaring spawnpoint
   const spawnPoint = map2.findObject("Objects", obj => obj.name === "Spawn Point");
@@ -100,7 +99,6 @@ aboveLayer3.setDepth(10);
   
 // Create a sprite with physics enabled via the physics system. The image used for the sprite has
 // a bit of whitespace, so I'm using setSize & setOffset to control the size of the player's body.
-
   player = this.physics.add
   .sprite(spawnPoint.x, spawnPoint.y, "BAsprites", "front002")
   .setSize(30, 40)
@@ -159,7 +157,7 @@ aboveLayer3.setDepth(10);
     repeat: -1
   });
 
-  this.add
+  this.add // tells you in what part of the map you are in this moment
   .text(16, 16, 'Foligno East', {
     font: "18px monospace",
     fill: "#000000",
@@ -173,8 +171,10 @@ aboveLayer3.setDepth(10);
   camera.startFollow(player); //camera follows let player
   camera.setBounds(0, 0, map2.widthInPixels, map2.heightInPixels); //camerasize is mapsize (of gameconfig.)
 
+  // makes it possible to move around the map with the arrow keys
   cursors = this.input.keyboard.createCursorKeys();
 
+  // create boundries of the map 
   this.physics.world.setBounds(0, 0, map2.widthInPixels, map2.heightInPixels, true, true, true, true);
   player.body.collideWorldBounds=true;
 }
@@ -222,6 +222,10 @@ update(time, delta) {
     if(player.y>maximumY){
       this.goSouth();
     }
+
+    if(player.y<minimumY){
+      this.goNorth();
+    }
     
 // If we were moving, pick and idle frame to use
     if (prevVelocity.x < 0) player.setTexture("BAsprites", "left002");
@@ -234,12 +238,16 @@ update(time, delta) {
 end() {	
 }
 
-goWest() {
+goWest() {// jumps the player to other map
   this.scene.start('sceneMiddleFoligno', { xpixel: 9800, ypixel:player.y });
   }
 
-goSouth() {
+goSouth() {// jumps the player to other map
     this.scene.start('sceneSouthEastFoligno', { xpixel: player.x, ypixel:25 });
+  }
+
+goNorth() {// jumps the player to other map
+
   }
 }
 
