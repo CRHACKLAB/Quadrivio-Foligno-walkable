@@ -221,6 +221,8 @@ update(time, delta) {
       this.input.keyboard.once('keydown-S', () => this.talkStuff());
     }
 
+    this.input.keyboard.once('keydown-D', () => this.talkStuff2());
+
 // If we were moving, pick and idle frame to use
     if (prevVelocity.x < 0) player.setTexture("BAsprites", "left002");
     else if (prevVelocity.x > 0) player.setTexture("BAsprites", "right002");
@@ -252,6 +254,10 @@ goSouth() {// starts the dialogue scene
 
   talkStuff() {// starts the dialogue scene
     this.scene.start('dialogue');
+  }
+
+  talkStuff2() {// starts the dialogue scene
+    console.log("yas is "+player.y+"");
   }
 
 
