@@ -36,7 +36,7 @@ create () {
 
   var rect1 = this.add.rectangle(420, 500, 650, 148, 0);
 
-rect1.alpha = 0.5;
+  rect1.alpha = 0.5;
 
   this.label = this.add.text(200, 450, '', {
     font: "18px monospace",
@@ -47,7 +47,7 @@ rect1.alpha = 0.5;
   .setWordWrapWidth(520);
 
   this.typewriteTextWrapped("Hello there ! I am Aaron's first creation.");
-  this.input.once('pointerdown', () => this.nextText(conversationCounter));
+  this.input.once('keydown-S', () => this.nextText(conversationCounter));
 
 }
 
