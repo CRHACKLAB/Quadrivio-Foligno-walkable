@@ -224,8 +224,6 @@ update(time, delta) {
       this.input.keyboard.once('keydown-S', () => this.talkStuff());
     }
 
-    this.input.keyboard.once('keydown-D', () => this.coordinates());
-
 // If we were moving, pick and idle frame to use
     if (prevVelocity.x < 0) player.setTexture("BAsprites", "left002");
     else if (prevVelocity.x > 0) player.setTexture("BAsprites", "right002");
