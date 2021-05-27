@@ -88,12 +88,15 @@ nextText(conversationCounter)
   switch (conversationCounter) {
     case 0:
       this.typewriteTextWrapped('This is the first conversation in the game.'+conversationCounter);
+      conversationCounter+=1;
       break;
     case 1:
       this.typewriteTextWrapped("That's actually all I have to say for now."+conversationCounter);
+      conversationCounter+=1;
       break;
     case 2:
       this.typewriteTextWrapped('Goodluck on your journey!'+conversationCounter);
+      conversationCounter+=1;
       break;
     case 3:
       this.scene.start('sceneMiddleFoligno', { xpixel: 7220, ypixel: 1922 });
@@ -101,7 +104,6 @@ nextText(conversationCounter)
     default:
       break;
   }
-  conversationCounter+=1;
 }
 
 }
