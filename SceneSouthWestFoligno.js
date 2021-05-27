@@ -227,7 +227,7 @@ goEast() {// jumps the player to other map
   }
 
 goNord() {// jumps the player to other map
-    this.scene.start('sceneWestFoligno', { xpixel: player.x, ypixel:7430 });
+    this.scene.start('sceneWestFoligno', { xpixel: player.x, ypixel:7455 });
   }
 }
 

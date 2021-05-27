@@ -10,7 +10,6 @@
  let maximumX=9800;
  let minimumX=20;
  let maximumY=7460;
- let minimumY=5;
 
  var preloadScene = new PreloadScene();
  
@@ -228,6 +227,12 @@ update(time, delta) {
      if(player.y>maximumY){
       this.goSouth();
      }
+     if(player.y<minimumX){
+      this.goWest();
+     }
+     if(player.y>maximumX){
+      this.goEast();
+     }
 
   // If we were moving, pick and idle frame to use
     if (prevVelocity.x < 0) player.setTexture("BAsprites", "left002");
@@ -240,9 +245,15 @@ update(time, delta) {
   end() {
       
   }
-   goSouth() {
+  goSouth() {
      this.scene.start('sceneMiddleFoligno', { xpixel: player.x, ypixel: 50 });
    }
+  goEast() {
+
+  }
+  goWest() {
+
+  }
 }
 
 export default SceneNordFoligno;
