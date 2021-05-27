@@ -44,7 +44,8 @@ rect1.alpha = 0.5;
   .setDepth(30)
   .setWordWrapWidth(520);
 
-  this.typewriteTextWrapped('Hello, World! Hello, World! Hello, World! Hello, x World! Hello, World!')
+  var firstext = this.typewriteTextWrapped('Hello, World! Hello, World! Hello, World! Hello, x World! Hello, World!');
+  this.input.once('pointerdown', () => this.nextText());
 
 }
 
@@ -68,6 +69,11 @@ typewriteTextWrapped(text)
 	const wrappedText = lines.join('\n')
 
 	this.typewriteText(wrappedText)
+}
+
+nextText()
+{
+ firstext=this.typewriteTextWrapped('Second Text');
 }
 
 }
