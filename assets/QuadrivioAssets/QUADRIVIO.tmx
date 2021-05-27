@@ -287,22 +287,22 @@
   </tile>
   <tile id="56">
    <properties>
-    <property name="collides" type="bool" value="true"/>
+    <property name="collides" type="bool" value="false"/>
    </properties>
   </tile>
   <tile id="57">
    <properties>
-    <property name="collides" type="bool" value="true"/>
+    <property name="collides" type="bool" value="false"/>
    </properties>
   </tile>
   <tile id="58">
    <properties>
-    <property name="collides" type="bool" value="true"/>
+    <property name="collides" type="bool" value="false"/>
    </properties>
   </tile>
   <tile id="59">
    <properties>
-    <property name="collides" type="bool" value="true"/>
+    <property name="collides" type="bool" value="false"/>
    </properties>
   </tile>
   <tile id="60">
@@ -22860,7 +22860,7 @@
 </data>
  </layer>
  <objectgroup id="12" name="Objects">
-  <object id="3" name="Spawn Point" x="165.18" y="7337.78">
+  <object id="3" name="Spawn Point" x="6843.85" y="2016.45">
    <point/>
   </object>
  </objectgroup>
