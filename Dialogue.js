@@ -48,7 +48,7 @@ create () {
 
   this.typewriteTextWrapped("Hello there ! I am Aaron's first creation.");
   this.input.once('pointerdown', () => this.nextText(conversationCounter));
-  this.input.once('keydown-S', () => this.nextText(conversationCounter));
+  this.input.on('keydown-S', () => this.nextText(conversationCounter));
 
 }
 
