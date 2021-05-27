@@ -6,7 +6,7 @@ import PreloadScene from './preloadScene.js';
 
 var preloadScene = new PreloadScene();
 
-var firstext="";
+var conversationCounter = 0;
 
 class Dialogue extends Phaser.Scene {
 
@@ -46,8 +46,8 @@ rect1.alpha = 0.5;
   .setDepth(30)
   .setWordWrapWidth(520);
 
-  this.typewriteTextWrapped('Hello, World! Hello, World! Hello, World! Hello, x World! Hello, World!');
-  this.input.once('pointerdown', () => this.nextText());
+  this.typewriteTextWrapped("Hello there ! I am Aaron's first creation.");
+  this.input.once('pointerdown', () => this.nextText(conversationCounter));
 
 }
 
@@ -73,7 +73,7 @@ typewriteTextWrapped(text)
 	this.typewriteText(wrappedText)
 }
 
-nextText()
+nextText(conversationCounter)
 {
   this.label.destroy();
 
@@ -84,8 +84,24 @@ nextText()
   .setScrollFactor(0)
   .setDepth(30)
   .setWordWrapWidth(520);
-  
-  this.typewriteTextWrapped('Second Text');
+
+  switch (conversationCounter) {
+    case 0:
+      this.typewriteTextWrapped('This is the first conversation in the game.');
+      break;
+    case 1:
+      this.typewriteTextWrapped("That's actually all I have to say for now.");
+      break;
+    case 2:
+      this.typewriteTextWrapped('Goodluck on your journey!');
+      break;
+    case 3:
+      this.scene.start('sceneMiddleFoligno', { xpixel: 7220, ypixel: 1922 });
+      break;
+    default:
+      break;
+  }
+  conversationCounter+=1;
 }
 
 }
