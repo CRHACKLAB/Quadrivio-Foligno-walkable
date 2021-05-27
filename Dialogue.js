@@ -6,6 +6,8 @@ import PreloadScene from './preloadScene.js';
 
 var preloadScene = new PreloadScene();
 
+var firstext="";
+
 class Dialogue extends Phaser.Scene {
 
 	constructor() {
@@ -44,7 +46,7 @@ rect1.alpha = 0.5;
   .setDepth(30)
   .setWordWrapWidth(520);
 
-  var firstext = this.typewriteTextWrapped('Hello, World! Hello, World! Hello, World! Hello, x World! Hello, World!');
+  firstext = this.typewriteTextWrapped('Hello, World! Hello, World! Hello, World! Hello, x World! Hello, World!');
   this.input.once('pointerdown', () => this.nextText());
 
 }
@@ -73,7 +75,7 @@ typewriteTextWrapped(text)
 
 nextText()
 {
- firstext=this.typewriteTextWrapped('Second Text');
+  firstext=this.typewriteTextWrapped('Second Text');
 }
 
 }
