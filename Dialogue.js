@@ -101,7 +101,7 @@ nextText()
       break;
     case 3:
       this.scene.start('sceneMiddleFoligno', { xpixel: 7220, ypixel: 1922 });
-      conversationCounter+=1;
+        conversationCounter=0;
       break;
     default:
       break;
