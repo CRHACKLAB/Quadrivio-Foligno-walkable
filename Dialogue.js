@@ -47,7 +47,6 @@ create () {
   .setWordWrapWidth(520);
 
   this.typewriteTextWrapped("Hello there ! I am Aaron's first creation.");
-  this.input.on('pointerdown', () => this.nextText(conversationCounter));
   this.input.on('keydown-S', () => this.nextText(conversationCounter));
 
 }
