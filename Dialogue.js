@@ -75,7 +75,7 @@ typewriteTextWrapped(text)
 
 nextText()
 {
-  firstext.destroy();
+  this.label.destroy();
   firstext=this.typewriteTextWrapped('Second Text');
 }
 
