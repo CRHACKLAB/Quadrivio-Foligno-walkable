@@ -88,13 +88,13 @@ nextText()
 
   switch (conversationCounter) {
     case 0:
-      this.typewriteTextWrapped('This is the first conversation in the game.'+conversationCounter);
+      this.typewriteTextWrapped('This is the first conversation in the game.');
       break;
     case 1:
-      this.typewriteTextWrapped("That's actually all I have to say for now."+conversationCounter);
+      this.typewriteTextWrapped("That's actually all I have to say for now.");
       break;
     case 2:
-      this.typewriteTextWrapped('Goodluck on your journey!'+conversationCounter);
+      this.typewriteTextWrapped('Goodluck on your journey!');
       break;
     case 3:
       this.scene.start('sceneMiddleFoligno', { xpixel: 7220, ypixel: 1922 });
