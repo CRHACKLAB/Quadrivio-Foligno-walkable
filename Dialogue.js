@@ -76,6 +76,15 @@ typewriteTextWrapped(text)
 nextText()
 {
   this.label.destroy();
+
+  this.label = this.add.text(200, 450, '', {
+    font: "18px monospace",
+    fill: "#ffffff"
+  })
+  .setScrollFactor(0)
+  .setDepth(30)
+  .setWordWrapWidth(520);
+  
   this.typewriteTextWrapped('Second Text');
 }
 
